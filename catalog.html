@@ -17,7 +17,7 @@
               <span>Производитель светодиодного освещения. Собственная торговая марка "СДСВЕТ". Оптовые поставки по всей РФ.</span>
             </div>
             <div class="header-main_top_button">
-              <span>Оставить заявку</span>
+              <span data-toggle="modal" data-target="#proposal-modal">Оставить заявку</span>
             </div>
           </div>
         </div>
@@ -72,9 +72,22 @@
               </div>
               <div class="header-main_controls_item">
                 <div class="order ordered">
-                  <div>
+                  <a href="" class="order-link" data-toggle="dropdown">
                     <span class="bage">24</span>
-                  </div>
+                  </a>
+                  <div class="mini-basket-wrapper">
+                    <ul class="mini-basket-content">
+                      <li>
+                        <p>Трековый светильник Track</p>
+                        <span>60 шт.</span>
+                      </li>
+                      <li>
+                        <p>Трековый светильник Track</p>
+                        <span>10 шт.</span>
+                      </li>
+                    </ul>
+                    <button class="btn">Оформить заказ</button>
+                  </div>  
                 </div>
               </div>
             </div>
@@ -361,15 +374,17 @@
                 </div>
                 <div class="footer-subscribe col-xl-3 col-lg-4 col-md-5">
                   <p>В нашей рассылке только полезное. Акции, новости и события отрасли.</p>
-                  <form action="">
+                  <form id="subscribe" action="">
                     <div class="form-group">
-                      <input type="text" placeholder="Имя">
+                      <input type="text" placeholder="Имя" id="subscribeName">
                     </div>
                     <div class="form-group">
-                      <input type="text" placeholder="Email">
+                      <input type="email" class="form-input-text form-control" id="subscribeEmail" type="email" name="subscribeEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
                     <div class="form-group">
-                      <button class="btn">Подписаться</button>
+                      <div data-toggle="modal" data-target="#subscribe-modal">
+                        <button class="btn">Подписаться</button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -430,6 +445,97 @@
           </div>
         </div>
       </footer>
-      <script src="js/custom.js"></script>
+      <div class="modal fade bs-example-modal-lg" id="proposal-modal" tabindex="-1" role="dialog" aria-labelledby="proposal-modal-label">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <div class="close-address-btn" data-dismiss="modal" aria-hidden="true"><img src="images/ic_close.svg" alt=""></div>           
+                    <form action="" id="proposalForm" >
+                      <h3>Оставьте заявку и получите персональное коммерческое предложение</h3>
+                      <div class="row">
+                        <div class="form-group col-md-6 col-xs-12">
+                          <label class="label" for="">Имя</label>
+                          <input type="text" class="form-input-text form-control" id="proposalName" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form-group col-md-6 col-xs-12">
+                          <label class="label" for="">Телефон</label>
+                          <input type="text" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Формат: +7(777)777-77-77" class="form-input-text form-control" id="proposalPhone" name="proposalName" placeholder="+7(777)777-77-77">
+                        </div>
+                        <div class="form-group col-md-12 col-xs-12">
+                          <label class="label" for="">E-mail</label>
+                          <input type="email" class="form-input-text form-control" id="proposalEmail" type="email" name="proposalEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="form-group-description col-12"><p>Данные помещения</p></div>
+                        <div class="form-group three-items col-12">
+                          <div class="form-group-item">
+                            <label class="label" for="">Длина, мм</label>
+                            <input type="text" pattern="^[0-9]+$" class="number">
+                          </div>
+                          <div class="form-group-item">
+                            <label class="label" for="">Ширина, мм</label>
+                            <input type="text" pattern="^[0-9]+$" class="number">
+                          </div>
+                          <div class="form-group-item">
+                            <label class="label" for="">Высота, мм</label>
+                            <input type="text" pattern="^[0-9]+$" class="number">
+                          </div>
+                        </div>
+                        <div class="form-group col-12">
+                          <label class="label" for="">Объект</label>
+                          <input type="text">
+                        </div>
+                        <div class="form-group col-12">
+                          <label class="label" for="">Назначение</label>
+                          <input type="text">
+                        </div>
+                        <div class="form-group col-md-6 col-xs-12">
+                          <label class="label" for="">Кол-во светильников</label>
+                          <div class="quantity-block">
+                              <span class="quantity-arrow-minus"></span>
+                              <input class="quantity-num" type="number" value="1" />
+                              <span class="quantity-arrow-plus"></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6 col-xs-12">
+                          <div class="form-group-wrapper-check">
+                            <label class="label" for="">Монтаж</label>
+                            <label class="checkbox-label" id="verifyLabel2">
+                              <input class="check-button" value="all" type="checkbox" name="verifyInput2" id="verifyInput2" checked>
+                              <span class="root-check"></span>
+                              <span class="">Требуется монтаж</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-controls col-12">
+                          <div class="form-group">
+                            <label class="checkbox-label" id="verifyLabel">
+                              <input class="check-button" value="all" type="checkbox" name="verifyInput" id="verifyInput" checked>
+                              <span class="root-check"></span>
+                              <span class="">Я даю свое согласие на обработку персональных данных.</span>
+                            </label>
+                          </div>                 
+                          <div class="form-group">
+                            <button class="btn" type="submit" name="">Отправить</button>
+                          </div>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade bs-example-modal-lg" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="subscribe-modal-label">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <div class="close-address-btn" data-dismiss="modal" aria-hidden="true"><img src="images/ic_close.svg" alt=""></div>  
+                  <h3>Запрос отправлен. Посетите Ваш почтовый ящик, чтобы подтвердить emai.</h3>         
+                </div>
+              </div>
+          </div>
+      </div>
+      <script type="text/javascript" charset="UTF-8" src="js/bootstrap.js"></script>
+      <script type="text/javascript" charset="UTF-8" src="js/owl.carousel.js"></script>
+      <script type="text/javascript" charset="UTF-8" src="js/custom.js"></script>
     </body>
   </html>

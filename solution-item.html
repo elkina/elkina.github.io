@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <link type="text/css" rel="stylesheet" href="app/css/style.css"  media="screen,projection"/>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>О компании</title>
+    </head>
+    <body>
+        <header class="header-main">
+            <div class="header-main_top">
+              <div class="container">
+                <div class="header-main_top_info">
+                  <span>Производитель светодиодного освещения. Собственная торговая марка "СДСВЕТ". Оптовые поставки по всей РФ.</span>
+                </div>
+                <div class="header-main_top_button">
+                  <span data-toggle="modal" data-target="#proposal-modal">Оставить заявку</span>
+                </div>
+              </div>
+            </div>
+            <div class="header-main_area">
+              <div class="container">
+                <div class="header-main_logo">
+                  <a href="catalog.html">
+                    <img src="images/logo.svg" alt="СДСВET: Cветодиодное и индукционное светотехническое оборудование" title="СДСВET: Cветодиодное и индукционное светотехническое оборудование">
+                  </a>
+                </div>
+                <div class="header-main_info">
+                  <div class="header-main_info_item">
+                    <div class="location">
+                      <a href="https://www.google.com/maps/place/%D0%90%D0%9B%D0%AC%D0%A2%D0%90,+%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BE-%D0%BE%D1%84%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80/@55.91639,37.7700533,17z/data=!4m5!3m4!1s0x0:0x6353636e681042e0!8m2!3d55.9163902!4d37.772242">
+                        <i>
+                          <img src="images/ic_address.svg" alt="">
+                        </i>
+                        <span>
+                          Мытищи, Олимпийский пр-кт, 10, БЦ “Альта”
+                          <span class="description">Пн-Пт с 9:00 до 17:30</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header-main_info_item">
+                    <div class="phone">
+                      <a href="tel:+74955894050">
+                        <i>
+                          <img src="images/ic_phone.svg" alt="">
+                        </i>
+                        <span>+7(495)589-40-50</span>
+                      </a> 
+                    </div>
+                  </div>
+                  <div class="header-main_info_item">
+                    <div class="email">
+                      <a href="mailto:sdsvet@sdsvet.ru">
+                        <i>
+                          <img src="images/ic_email.svg" alt="">
+                        </i>
+                        <span>sdsvet@sdsvet.ru</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-main_controls">
+                  <div class="header-main_controls_item">
+                    <div class="login unauthorized">
+                      <span class="btn">Войти</span>
+                      <!-- <span>Краснопольский Алексей</span> -->
+                    </div>
+                  </div>
+                  <div class="header-main_controls_item">
+                    <div class="order ordered">
+                      <a href="" class="order-link" data-toggle="dropdown">
+                        <span class="bage">24</span>
+                      </a>
+                      <div class="mini-basket-wrapper">
+                        <ul class="mini-basket-content">
+                          <li>
+                            <p>Трековый светильник Track</p>
+                            <span>60 шт.</span>
+                          </li>
+                          <li>
+                            <p>Трековый светильник Track</p>
+                            <span>10 шт.</span>
+                          </li>
+                        </ul>
+                        <button class="btn">Оформить заказ</button>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-main_bottom" id="nav-menu">
+              <div class="container">
+                <nav class="header-nav">
+                  <span class="mobile-menu-button">
+                    <img src="images/ic_catalog-mobile.svg" alt="">
+                  </span>
+                  <span class="mobile-menu-close">
+                    <img src="images/ic_close.svg" alt="">
+                  </span>
+                  <div class="header-nav-wrapper">
+                    <ul class="header-nav_list">
+                      <li class="header-nav_item">
+                        <div class="header-nav_link nav-icon">
+                          <a href=""><span></span>Каталог</a>
+                        </div>
+                        <ul class="header-nav_dropdown">
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Наружное</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">HoReCa</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Промышленные</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="category.html">Акцентное</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Офисное</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">ЖКХ</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Аварийные</a>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Системы управления</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav_item">
+                        <div class="header-nav_link">
+                          <a href="">Проекты</a>
+                        </div>
+                      </li>
+                      <li class="header-nav_item">
+                        <div class="header-nav_link">
+                          <a href="">Услуги</a>
+                        </div>
+                      </li>
+                      <li class="header-nav_item">
+                        <div class="header-nav_link">
+                          <a href="">Акции</a>
+                        </div>
+                      </li>
+                      <li class="header-nav_item">
+                        <div class="header-nav_link">
+                          <a href="">Партнерам</a>
+                        </div>
+                      </li>
+                      <li class="header-nav_item">
+                        <div class="header-nav_link">
+                          <a href="">Готовые решения</a>
+                        </div>
+                        <ul class="header-nav_dropdown">
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Торгово-офисные</a>
+                            <ul class="header-nav_dropdown_sublist">
+                              <li>
+                                <a href="">Торговые и бизнес центры</a>
+                              </li>
+                              <li>
+                                <a href="">Аптеки/Парикмахерские</a>
+                              </li>
+                              <li>
+                                <a href="">Гостиницы/Банки</a>
+                              </li>
+                              <li>
+                                <a href="">Офисные пространства</a>
+                              </li>
+                              <li>
+                                <a href="">Муниципальные объекты</a>
+                              </li>
+                              <li>
+                                <a href="">Ресторанный бизнес</a>
+                              </li>
+                              <li>
+                                <a href="">Подсобные помещения</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Производственные</a>
+                            <ul class="header-nav_dropdown_sublist">
+                              <li>
+                                <a href="">Склады/Ангары</a>
+                              </li>
+                              <li>
+                                <a href="">Заводы/Цеха</a>
+                              </li>
+                              <li>
+                                <a href="">Логистические комплексы</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="header-nav_dropdown_list">
+                            <a href="">Общественные пространства</a>
+                            <ul class="header-nav_dropdown_sublist">
+                              <li>
+                                <a href="">Спортивные объекты</a>
+                              </li>
+                              <li>
+                                <a href="">Парковки и открытые территории</a>
+                              </li>
+                              <li>
+                                <a href="">Улицы и автодороги</a>
+                              </li>
+                              <li>
+                                <a href="">ЖК и дворовые территории</a>
+                              </li>
+                              <li>
+                                <a href="">Пешеходные и парковые зоны</a>
+                              </li>
+                              <li>
+                                <a href="">Фасадная и архитектурная подсветка</a>
+                              </li>
+                              <li>
+                                <a href="">Пешеходные переходы</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="header-main_search">
+                  <div class="search-group">
+                    <input type="text" placeholder="Поиск по каталогу" class="search-input">
+                    <span class="search-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>  
+        <main class="main-wrapper">  
+          <div class="container">
+            <div class="breadcrumb">
+                <span>
+                    <span class="breadcrumb-link">
+                        <a href="">Главная</a>
+                    </span>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-link">
+                      <a href="">Готовые решения </a>
+                  </span>
+                  <span class="breadcrumb-separator">/</span>
+                    </span>
+                    <span class="breadcrumb-link">
+                      Комфортная и эффективная рабочая среда
+                    </span>
+                </span>
+            </div>
+            <h1 class="main-title">Стиль жилого комплекса начинается с улицы</h1>
+            <section class="main-banner">
+                <div class="main-banner_wrap">
+                    <div class="main-banner_text">
+                        <h1>
+                            Производитель светодиодного оборудования
+                        </h1>
+                        <p>Собственная торговая марка "СДСВЕТ"</p>
+                        <p>Оптовые поставки по всей РФ без посредников</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="about-mission">
+                    <img src="images/goal.svg" alt="">
+                    <span>Миссия: обеспечивать пространства правильным освещением, о котором вам не приходится думать.</span>
+                </div>
+                <div class="advantage">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="advantage-images">
+                              <img src="images/advantage.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="advantage-content">
+                                <div class="advantage-content_item">
+                                    <div class="advantage-content_title">Работа с клиентами без посредников</div>
+                                    <div class="advantage-content_subtitle">Мы работаем напрямую, за счёт чего клиент получает</div>
+                                    <ul class="advantage-content_list">
+                                        <li class="">Информацию по техническим вопросам из первоисточника</li>
+                                        <li class="">Цены без накруток</li>
+                                        <li class="">Решение вопросов на этапах монтажа и эксплуатации напрямую</li>
+                                    </ul>
+                                </div>
+                                <div class="advantage-content_item">
+                                    <div class="advantage-content_title">Надёжность означает неизменное качество</div>
+                                    <ul class="advantage-content_list">
+                                        <li class="">Неизменное качество светового потока</li>
+                                        <li class="">Отсутствие эксплуатационных затрат</li>
+                                        <li class="">Качество крупных брендов при лучшей цене</li>
+                                    </ul>
+                                </div>
+                                <div class="advantage-content_item">
+                                    <div class="advantage-content_title">Российское производство для российских реалий</div>
+                                    <ul class="advantage-content_list">
+                                        <li class="">Мы производим оборудование собственной разработки, которое специально создаётся для российских реалий.</li>
+                                    </ul>
+                                </div>
+                                <div class="advantage-content_item">
+                                    <div class="advantage-content_title">Персональный подход</div>
+                                    <ul class="advantage-content_list">
+                                        <li class="">Каждый клиент имеет персонального менеджера и проектировщика</li>
+                                        <li class="">Разработка светильников под ваш проект</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-history">
+                    <h4>Работаем с 2012 года</h4>
+                    <p>На базе опыта и знаний, накопленных в сфере контрактного производства электроники мы основали светотехническое предприятие СДСВЕТ.  Как производители 90% печатных плат для светодиодного освещения на рынке РФ, мы знакомы со всеми минусами и плюсами существующих технических решений. Мы знаем как избежать минусов при этом не сильно влияя на цену, гарантируя неизменное качество продукции ТМ СДСВЕТ. </p>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="about-section_title">
+                    <h4>Производство</h4>
+                </div>
+                <div class="about-production row">
+                    <div class="col-xl-7">
+                        <div class="about-production_description">
+                            <ul class="about-production_advantages">
+                                <li>Качество нашей продукции начинается с выбора поставщика, под строгим контролем изготавливаются платы, оптика, корпуса, производится закупка внутренних компонентов.</li>
+                                <li>Штат специалистов конструкторского отдела включает инженеров в различных областях. </li>
+                                <li>Лучшую цену обеспечивает сеть производств светодиодов и прямые контракты с вендорами.</li>
+                            </ul>
+                            <div class="about-production_stages">
+                                <div class="about-production_stages_item">
+                                    <div class="about-production_stages_title">Монтаж печатных плат</div>
+                                    <ul class="about-production_stages_list">
+                                        <li>металлообработка</li>
+                                        <li>ЧПУ станки</li>
+                                        <li>лазерная резка</li>
+                                        <li>гибка металла</li>
+                                        <li>конденсаторная сварка</li>
+                                        <li>точечная сварка</li>
+                                        <li>порошковая покраска</li>
+                                    </ul>
+                                </div>
+                                <div class="about-production_stages_item">
+                                    <div class="about-production_stages_title">Производство корпусов и деталей</div>
+                                    <ul class="about-production_stages_list">
+                                        <li>поверхностный монтаж плат</li>
+                                        <li>автоматическая набивка дип элементов</li>
+                                        <li>монтаж печатных плат с выводными компонентами </li>
+                                        <li>обработка проводов</li>
+                                    </ul>
+                                </div>
+                                <div class="about-production_stages_item">
+                                    <div class="about-production_stages_title">Два сборочных участка</div>
+                                    <ul class="about-production_stages_list">
+                                        <li>до 500 светильников в день</li>
+                                    </ul>
+                                </div>
+                                <div class="about-production_stages_item">
+                                    <div class="about-production_stages_title">Участок контроля продукции и компонентов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-production_media col-xl-5">
+                        <div class="about-production_map">
+                            <img src="images/map-aleksandrov.png" alt="">
+                            <p>Производство находится </br>в г.Александров, Владимирская область</p>
+                        </div>
+                        <div class="about-production_video">
+                            <a href=""><img src="images/youtube.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="about-section_title">
+                    <h4>В чём мы сильны</h4>
+                </div>
+                <div class="about-strong">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="about-strong_item">
+                                <span class="about-strong_number">01</span>
+                                <p>
+                                    Световое оборудование ТМ СДСВЕТ имеет разрешение на установку от Моссвет, Автодор, Мособлэнерго
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="about-strong_item">
+                                <span class="about-strong_number">02</span>
+                                <p>
+                                    Световое оборудование ТМ СДСВЕТ по техническим параметрам не уступает продукции всемирно известных брендов, при этом входит в средний ценовой сегмент
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="about-strong_item">
+                                <span class="about-strong_number">03</span>
+                                <p>
+                                    Максимальное время ожидания на любого вида запрос - 30 минут. Рассчёт даже сложного проекта - максимум 1 день
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="about-strong_item">
+                                <span class="about-strong_number">04</span>
+                                <p>
+                                    Российское производство полного цикла
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="about-strong_item">
+                                <span class="about-strong_number">05</span>
+                                <p>
+                                    Системы лояльности клиентов сопровождение проектов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="about-strong_item">
+                                <span class="about-strong_number">06</span>
+                                <p>
+                                    Мы с уверенностью даём гарантию на продукцию до 7 лет
+                                </p>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="about-section_title">
+                    <h4>Наши лучшие достижения</h4>
+                </div>
+                <div class="about-achievements">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="about-achievements_item">
+                              <img src="images/development.svg" alt="">
+                              <div class="about-achievements_title">Девелопмент</div>
+                              <div class="about-achievements_text">Десятки проектов в жилых комплексах в Москве и МО</div>
+                              <div class="link-more">
+                                  <a href="">
+                                    <span>Смотреть проект</span><span class="arrow"></span>
+                                  </a>     
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="about-achievements_item">
+                            <img src="images/street-lighting.svg" alt="">
+                            <div class="about-achievements_title">Уличное освещение</div>
+                            <div class="about-achievements_text">Освещение трасс, дорог и пешеходных переходов Москвы и МО</div>
+                            <div class="link-more">
+                                <a href="">
+                                  <span>Смотреть проект</span><span class="arrow"></span>
+                                </a>     
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="about-achievements_item">
+                            <img src="images/manufacturing.svg" alt="">
+                            <div class="about-achievements_title">Производственные комплексы</div>
+                            <div class="about-achievements_text">Освещение трасс, дорог и пешеходных переходов Москвы и МО</div>
+                            <div class="link-more">
+                                <a href="">
+                                  <span>Смотреть проект</span><span class="arrow"></span>
+                                </a>     
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="about-achievements_item">
+                            <img src="images/logistic.svg" alt="">
+                            <div class="about-achievements_title">Логистические комплексы</div>
+                            <div class="about-achievements_text">Десятки проектов в жилых комплексах в Москве и МО</div>
+                            <div class="link-more">
+                                <a href="">
+                                  <span>Смотреть проект</span><span class="arrow"></span>
+                                </a>     
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="about-achievements_item">
+                            <img src="images/development.svg" alt="">
+                            <div class="about-achievements_title">Ресторанный бизнес</div>
+                            <div class="about-achievements_text">Замещение светотехнической продукции известного итальянского бренда в ресторанах сети KFC</div>
+                            <div class="link-more">
+                                <a href="">
+                                  <span>Смотреть проект</span><span class="arrow"></span>
+                                </a>     
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="about-achievements_item">
+                            <img src="images/municipal.svg" alt="">
+                            <div class="about-achievements_title">Муниципальные учреждения</div>
+                            <div class="about-achievements_text">Замещение светотехнической продукции известного итальянского бренда в ресторанах сети KFC</div>
+                            <div class="link-more">
+                                <a href="">
+                                  <span>Смотреть проект</span><span class="arrow"></span>
+                                </a>     
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+              <div class="information col-lg-8">
+                  <p><sup>*</sup>Представленная информация о ценах и наличии товаров на сайте не является публичной офертой, для уточнения актуальных цен и ассортимента обращайтесь по телефону: <a href="tel:+74955894050">+7(495)589-40-50</a></p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-main">
+              <div class="container">
+                <div class="footer-main_top">
+                  <div class="row">
+                    <div class="footer-nav col-xl-9 col-lg-8 col-md-7">
+                      <ul class="footer-nav_item">
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Интересные статьи</a></li>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Акции</a></li>
+                      </ul>
+                      <ul class="footer-nav_item ">
+                        <li><a href="">Партнерам</a></li>
+                        <li><a href="">Видеопрезентации</a></li>
+                        <li><a href="">Бланк расчета</a></li>
+                        <li><a href="">Скачать презентации</a></li>
+                      </ul>
+                      <ul class="footer-nav_item">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Работа в компании</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-subscribe col-xl-3 col-lg-4 col-md-5">
+                      <p>В нашей рассылке только полезное. Акции, новости и события отрасли.</p>
+                      <form id="subscribe" action="">
+                        <div class="form-group">
+                          <input type="text" placeholder="Имя" id="subscribeName">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-input-text form-control" id="subscribeEmail" type="email" name="subscribeEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="form-group">
+                          <div data-toggle="modal" data-target="#subscribe-modal">
+                            <button class="btn">Подписаться</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-main_bottom">
+                  <div class="row">
+                    <div class="footer-main_info col-xl-9 col-lg-8 col-md-12">
+                      <div class="footer-main_info_item">
+                        <div class="location">
+                          <a href="">
+                            <i>
+                              <img src="images/ic_address.svg" alt="">
+                            </i>
+                            <span>
+                              Мытищи, Олимпийский пр-кт, 10, БЦ “Альта”
+                              <span class="description">Пн-Пт с 9:00 до 17:30</span>
+                            </span>
+
+                          </a>
+                        </div>
+                      </div>
+                      <div class="footer-main_info_item">
+                        <div class="phone">
+                          <a href="tel:+74955894050">
+                            <i>
+                              <img src="images/ic_phone.svg" alt="">
+                            </i>
+                            <span>+7(495)589-40-50</span>
+                          </a> 
+                        </div>
+                      </div>
+                      <div class="footer-main_info_item">
+                        <div class="email">
+                          <a href="mailto:sdsvet@sdsvet.ru">
+                            <i>
+                              <img src="images/ic_email.svg" alt="">
+                            </i>
+                            <span>sdsvet@sdsvet.ru</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-main_social col-xl-3 col-lg-4">
+                      <ul>
+                        <li class="footer-main-social_item"><a href=""><img src="images/ic_facebook.png" alt="facebook"></a></li>
+                        <li class="footer-main-social_item"><a href=""><img src="images/ic_youtube.png" alt="youtube"></a></li>
+                        <li class="footer-main-social_item"><a href=""><img src="images/ic_insta.png" alt="instagram"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyrite">
+              <div class="container">
+                <span>© 2012-2020  Все права защищены! </span>
+              </div>
+            </div>
+        </footer>
+        <script type="text/javascript" charset="UTF-8" src="js/bootstrap.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="js/custom.js"></script>
+    </body>
+</html>
