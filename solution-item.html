@@ -7,7 +7,7 @@
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>О компании</title>
+        <title>Комфортная и эффективная рабочая среда</title>
     </head>
     <body>
         <header class="header-main">
@@ -24,7 +24,7 @@
             <div class="header-main_area">
               <div class="container">
                 <div class="header-main_logo">
-                  <a href="catalog.html">
+                  <a href="index.html">
                     <img src="images/logo.svg" alt="СДСВET: Cветодиодное и индукционное светотехническое оборудование" title="СДСВET: Cветодиодное и индукционное светотехническое оборудование">
                   </a>
                 </div>
@@ -72,7 +72,7 @@
                   </div>
                   <div class="header-main_controls_item">
                     <div class="order ordered">
-                      <a href="" class="order-link" data-toggle="dropdown">
+                      <a href="order.htm" class="order-link" data-toggle="dropdown">
                         <span class="bage">24</span>
                       </a>
                       <div class="mini-basket-wrapper">
@@ -243,280 +243,835 @@
         <main class="main-wrapper">  
           <div class="container">
             <div class="breadcrumb">
-                <span>
-                    <span class="breadcrumb-link">
-                        <a href="">Главная</a>
-                    </span>
-                    <span class="breadcrumb-separator">/</span>
-                    <span class="breadcrumb-link">
-                      <a href="">Готовые решения </a>
-                  </span>
-                  <span class="breadcrumb-separator">/</span>
-                    </span>
-                    <span class="breadcrumb-link">
-                      Комфортная и эффективная рабочая среда
-                    </span>
+              <span>
+                <span class="breadcrumb-link">
+                  <a href="">Главная</a>
                 </span>
+                <span class="breadcrumb-separator">/</span>
+              </span>
+              <span>
+                <span class="breadcrumb-link">
+                  <a href="">Готовые решения </a>
+                </span>
+                <span class="breadcrumb-separator">/</span>
+              </span>
+              <span>
+                <span class="breadcrumb-link">
+                  Комфортная и эффективная рабочая среда
+                </span>
+              </span>
             </div>
-            <h1 class="main-title">Стиль жилого комплекса начинается с улицы</h1>
-            <section class="main-banner">
-                <div class="main-banner_wrap">
-                    <div class="main-banner_text">
-                        <h1>
-                            Производитель светодиодного оборудования
-                        </h1>
-                        <p>Собственная торговая марка "СДСВЕТ"</p>
-                        <p>Оптовые поставки по всей РФ без посредников</p>
+            <section class="banner-section">
+                <div class="row">
+                  <div class="col-xl-8 col-md-12 col-lg-6">
+                    <div class="banner-section_img">
+                      <img src="images/solution-img-1.png" alt="">
                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-12 col-lg-6">
+                    <div class="main-form">
+                      <p class="main-form_title">Получите расчёт проекта в течение 4 часов</p>
+                      <form id="subscribe" action="">
+                        <div class="form-group">
+                          <input type="text" placeholder="Ваше имя" id="subscribeName">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Формат: +7(777)777-77-77" class="form-input-text form-control" id="" name="" placeholder="+7(777)777-77-77">
+                        </div>      
+                        <div class="form-group">
+                          <input type="email" class="form-input-text form-control" id="subscribeEmail" name="subscribeEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" placeholder="Размер помещения" id="sizeRoom">
+                        </div>
+                        <div class="form-group">
+                          <div class="attachment-group">
+                            <div class="attachment-btn">
+                              <label for="fileInput" class="">
+                                Прикрепить файл
+                              </label>
+                              <input type="file" style="display: none"  id="fileInput" />
+                            </div>
+                            <span class="attachment_description">Файл не более 10Мб</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn" type="submit" name="">Заказать расчет</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
             </section>
-            <section class="about-section">
-                <div class="about-mission">
-                    <img src="images/goal.svg" alt="">
-                    <span>Миссия: обеспечивать пространства правильным освещением, о котором вам не приходится думать.</span>
-                </div>
-                <div class="advantage">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="advantage-images">
-                              <img src="images/advantage.png" alt="">
-                            </div>
+            <section class="main-section">
+              <div class="solution-description row">
+                <div class="col-xl-5 col-lg-6 col-md-12">
+                  <div class="solution-description_item">
+                    <div class="solution-description_top">
+                      <div class="solution-description_first">
+                        <p>Компания SDSВЕТ разработала комплексное решение для освещения придомовых территорий жилых кварталов современным светотехническим оборудованием, которое соответствует всем нормам освещенности и при этом имеет современный лаконичный дизайн</p>
+                        <div class="solution-description_price">
+                          от <span>8000</span> руб/м <sup>2</sup>
                         </div>
-                        <div class="col-xl-8">
-                            <div class="advantage-content">
-                                <div class="advantage-content_item">
-                                    <div class="advantage-content_title">Работа с клиентами без посредников</div>
-                                    <div class="advantage-content_subtitle">Мы работаем напрямую, за счёт чего клиент получает</div>
-                                    <ul class="advantage-content_list">
-                                        <li class="">Информацию по техническим вопросам из первоисточника</li>
-                                        <li class="">Цены без накруток</li>
-                                        <li class="">Решение вопросов на этапах монтажа и эксплуатации напрямую</li>
-                                    </ul>
-                                </div>
-                                <div class="advantage-content_item">
-                                    <div class="advantage-content_title">Надёжность означает неизменное качество</div>
-                                    <ul class="advantage-content_list">
-                                        <li class="">Неизменное качество светового потока</li>
-                                        <li class="">Отсутствие эксплуатационных затрат</li>
-                                        <li class="">Качество крупных брендов при лучшей цене</li>
-                                    </ul>
-                                </div>
-                                <div class="advantage-content_item">
-                                    <div class="advantage-content_title">Российское производство для российских реалий</div>
-                                    <ul class="advantage-content_list">
-                                        <li class="">Мы производим оборудование собственной разработки, которое специально создаётся для российских реалий.</li>
-                                    </ul>
-                                </div>
-                                <div class="advantage-content_item">
-                                    <div class="advantage-content_title">Персональный подход</div>
-                                    <ul class="advantage-content_list">
-                                        <li class="">Каждый клиент имеет персонального менеджера и проектировщика</li>
-                                        <li class="">Разработка светильников под ваш проект</li>
-                                    </ul>
-                                </div>
-                            </div>
+                      </div>
+                      <div class="solution-description_second">
+                        <h3>Освещение территории оборудованием высокого качества</h3>
+                        <p>Гибкие технические параметры опор SDSВЕТ позволяют применять их во всех общественных зонах жилого комплекса, а единый дизайн обеспечит целостность восприятия проекта.</p>
+                        <div class="solution-description_price">
+                          от <span>8000</span> руб/м <sup>2</sup>
                         </div>
+                      </div>
                     </div>
+                  </div>    
                 </div>
-                <div class="about-history">
-                    <h4>Работаем с 2012 года</h4>
-                    <p>На базе опыта и знаний, накопленных в сфере контрактного производства электроники мы основали светотехническое предприятие СДСВЕТ.  Как производители 90% печатных плат для светодиодного освещения на рынке РФ, мы знакомы со всеми минусами и плюсами существующих технических решений. Мы знаем как избежать минусов при этом не сильно влияя на цену, гарантируя неизменное качество продукции ТМ СДСВЕТ. </p>
-                </div>
+                <div class="col-xl-7 col-lg-6 col-md-12">
+                  <div class="solution-description_item">
+                    <ul class="list-marker-ok">
+                      <li>Уникальные свойства осветительных комплексов позволяют увеличить расстояние между светоточками, сокращая стоимость всего проекта освещения</li>
+                      <li>Индивидуальное решение для каждой зоны от прилегающих автомобильных дорог до декоративного освещения</li>
+                      <li>Оптимальная высота опор</li>
+                      <li>Мощные светильники</li>
+                      <li>Отсутствие стробоскопического эффекта</li>
+                      <li>Уникальная направленная кривая силы света</li>
+                  </ul>
+                  </div>
+              </div>
             </section>
-            <section class="about-section">
-                <div class="about-section_title">
-                    <h4>Производство</h4>
-                </div>
-                <div class="about-production row">
-                    <div class="col-xl-7">
-                        <div class="about-production_description">
-                            <ul class="about-production_advantages">
-                                <li>Качество нашей продукции начинается с выбора поставщика, под строгим контролем изготавливаются платы, оптика, корпуса, производится закупка внутренних компонентов.</li>
-                                <li>Штат специалистов конструкторского отдела включает инженеров в различных областях. </li>
-                                <li>Лучшую цену обеспечивает сеть производств светодиодов и прямые контракты с вендорами.</li>
-                            </ul>
-                            <div class="about-production_stages">
-                                <div class="about-production_stages_item">
-                                    <div class="about-production_stages_title">Монтаж печатных плат</div>
-                                    <ul class="about-production_stages_list">
-                                        <li>металлообработка</li>
-                                        <li>ЧПУ станки</li>
-                                        <li>лазерная резка</li>
-                                        <li>гибка металла</li>
-                                        <li>конденсаторная сварка</li>
-                                        <li>точечная сварка</li>
-                                        <li>порошковая покраска</li>
-                                    </ul>
-                                </div>
-                                <div class="about-production_stages_item">
-                                    <div class="about-production_stages_title">Производство корпусов и деталей</div>
-                                    <ul class="about-production_stages_list">
-                                        <li>поверхностный монтаж плат</li>
-                                        <li>автоматическая набивка дип элементов</li>
-                                        <li>монтаж печатных плат с выводными компонентами </li>
-                                        <li>обработка проводов</li>
-                                    </ul>
-                                </div>
-                                <div class="about-production_stages_item">
-                                    <div class="about-production_stages_title">Два сборочных участка</div>
-                                    <ul class="about-production_stages_list">
-                                        <li>до 500 светильников в день</li>
-                                    </ul>
-                                </div>
-                                <div class="about-production_stages_item">
-                                    <div class="about-production_stages_title">Участок контроля продукции и компонентов</div>
-                                </div>
-                            </div>
-                        </div>
+            <section class="main-section">
+              <div class="solution-product">
+                <div class="solution-banner">
+                  <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                      <div class="solution-banner_img">
+                        <img src="images/solution-img-2.png" alt="">
+                      </div>
                     </div>
-                    <div class="about-production_media col-xl-5">
-                        <div class="about-production_map">
-                            <img src="images/map-aleksandrov.png" alt="">
-                            <p>Производство находится </br>в г.Александров, Владимирская область</p>
+                    <div class="col-xl-5 ">
+                      <div class="solution-banner_text">
+                        <div class="solution-banner_text_item">
+                          <h3>Освещение тротуаров, пешеходных дорожек в парковых зонах и зонах отдыха</h3>
+                          <p>Требуемый уровень освещенности <span>6 Лк</span></p>
                         </div>
-                        <div class="about-production_video">
-                            <a href=""><img src="images/youtube.png" alt=""></a>
-                        </div>
+                      </div>
                     </div>
+                  </div>                   
                 </div>
+                <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="solution-product_item">
+                      <div class="solution-product_item-img">
+                        <img src="images/holder-light-img.png" alt="">
+                      </div>
+                      <div class="solution-product_item-descript">
+                        <h5>Опоры освещения 4 метра одиночная двухконсольная одноуровневая</h5>
+                        <table class="">
+                          <thead>
+                            <tr>
+                              <th>Характеристики</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Мощность
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        28 Вт
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Световой поток
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        3660 Лм
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                Габариты опоры
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        4000 х 150 х 150
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td class="product-specification_name-td">
+                                    <div class="product-specification_name">
+                                        <span class="product-specification_name-text-wrapper">
+                                            <span class="product-specification_name-text">
+                                              Энергопотребление
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="product-specification_value">
+                                    <span class="product-specification_value-text">
+                                      28±5% Вт
+                                    </span>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul>
+                          <li>Температура эксплуатации от -50 до +50°С</li>
+                          <li>Максимальная статическая нагрузка в верхней точке опоры 280 кгс</li>
+                          <li>Мощность и КСС светодиодных модулей достигает среднего уровня освещенности 10 Лк</li>
+                        </ul>
+                        <div class="add-to-basket-button">
+                          <button class="btn">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="solution-product_item">
+                      <div class="solution-product_item-img">
+                        <img src="images/holder-light-img.png" alt="">
+                      </div>
+                      <div class="solution-product_item-descript">
+                        <h5>Опоры освещения 4 метра одиночная двухконсольная одноуровневая</h5>
+                        <table class="">
+                          <thead>
+                            <tr>
+                              <th>Характеристики</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Мощность
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        28 Вт
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Световой поток
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        3660 Лм
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                Габариты опоры
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        4000 х 150 х 150
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td class="product-specification_name-td">
+                                    <div class="product-specification_name">
+                                        <span class="product-specification_name-text-wrapper">
+                                            <span class="product-specification_name-text">
+                                              Энергопотребление
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="product-specification_value">
+                                    <span class="product-specification_value-text">
+                                      28±5% Вт
+                                    </span>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul>
+                          <li>Температура эксплуатации от -50 до +50°С</li>
+                          <li>Максимальная статическая нагрузка в верхней точке опоры 280 кгс</li>
+                          <li>Мощность и КСС светодиодных модулей достигает среднего уровня освещенности 10 Лк</li>
+                        </ul>
+                        <div class="add-to-basket-button">
+                          <button class="btn">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="solution-product_item">
+                      <div class="solution-product_item-img">
+                        <img src="images/holder-light-img.png" alt="">
+                      </div>
+                      <div class="solution-product_item-descript">
+                        <h5>Опоры освещения 4 метра одиночная двухконсольная одноуровневая</h5>
+                        <table class="">
+                          <thead>
+                            <tr>
+                              <th>Характеристики</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Мощность
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        28 Вт
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Световой поток
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        3660 Лм
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                Габариты опоры
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        4000 х 150 х 150
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td class="product-specification_name-td">
+                                    <div class="product-specification_name">
+                                        <span class="product-specification_name-text-wrapper">
+                                            <span class="product-specification_name-text">
+                                              Энергопотребление
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="product-specification_value">
+                                    <span class="product-specification_value-text">
+                                      28±5% Вт
+                                    </span>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul>
+                          <li>Температура эксплуатации от -50 до +50°С</li>
+                          <li>Максимальная статическая нагрузка в верхней точке опоры 280 кгс</li>
+                          <li>Мощность и КСС светодиодных модулей достигает среднего уровня освещенности 10 Лк</li>
+                        </ul>
+                        <div class="add-to-basket-button">
+                          <button class="btn">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
-            <section class="about-section">
-                <div class="about-section_title">
-                    <h4>В чём мы сильны</h4>
-                </div>
-                <div class="about-strong">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="about-strong_item">
-                                <span class="about-strong_number">01</span>
-                                <p>
-                                    Световое оборудование ТМ СДСВЕТ имеет разрешение на установку от Моссвет, Автодор, Мособлэнерго
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="about-strong_item">
-                                <span class="about-strong_number">02</span>
-                                <p>
-                                    Световое оборудование ТМ СДСВЕТ по техническим параметрам не уступает продукции всемирно известных брендов, при этом входит в средний ценовой сегмент
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="about-strong_item">
-                                <span class="about-strong_number">03</span>
-                                <p>
-                                    Максимальное время ожидания на любого вида запрос - 30 минут. Рассчёт даже сложного проекта - максимум 1 день
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="about-strong_item">
-                                <span class="about-strong_number">04</span>
-                                <p>
-                                    Российское производство полного цикла
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="about-strong_item">
-                                <span class="about-strong_number">05</span>
-                                <p>
-                                    Системы лояльности клиентов сопровождение проектов
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="about-strong_item">
-                                <span class="about-strong_number">06</span>
-                                <p>
-                                    Мы с уверенностью даём гарантию на продукцию до 7 лет
-                                </p>
-                            </div>
-                        </div>
-                    </div>       
-                </div>
-            </section>
-            <section class="about-section">
-                <div class="about-section_title">
-                    <h4>Наши лучшие достижения</h4>
-                </div>
-                <div class="about-achievements">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="about-achievements_item">
-                              <img src="images/development.svg" alt="">
-                              <div class="about-achievements_title">Девелопмент</div>
-                              <div class="about-achievements_text">Десятки проектов в жилых комплексах в Москве и МО</div>
-                              <div class="link-more">
-                                  <a href="">
-                                    <span>Смотреть проект</span><span class="arrow"></span>
-                                  </a>     
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="about-achievements_item">
-                            <img src="images/street-lighting.svg" alt="">
-                            <div class="about-achievements_title">Уличное освещение</div>
-                            <div class="about-achievements_text">Освещение трасс, дорог и пешеходных переходов Москвы и МО</div>
-                            <div class="link-more">
-                                <a href="">
-                                  <span>Смотреть проект</span><span class="arrow"></span>
-                                </a>     
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="about-achievements_item">
-                            <img src="images/manufacturing.svg" alt="">
-                            <div class="about-achievements_title">Производственные комплексы</div>
-                            <div class="about-achievements_text">Освещение трасс, дорог и пешеходных переходов Москвы и МО</div>
-                            <div class="link-more">
-                                <a href="">
-                                  <span>Смотреть проект</span><span class="arrow"></span>
-                                </a>     
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="about-achievements_item">
-                            <img src="images/logistic.svg" alt="">
-                            <div class="about-achievements_title">Логистические комплексы</div>
-                            <div class="about-achievements_text">Десятки проектов в жилых комплексах в Москве и МО</div>
-                            <div class="link-more">
-                                <a href="">
-                                  <span>Смотреть проект</span><span class="arrow"></span>
-                                </a>     
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="about-achievements_item">
-                            <img src="images/development.svg" alt="">
-                            <div class="about-achievements_title">Ресторанный бизнес</div>
-                            <div class="about-achievements_text">Замещение светотехнической продукции известного итальянского бренда в ресторанах сети KFC</div>
-                            <div class="link-more">
-                                <a href="">
-                                  <span>Смотреть проект</span><span class="arrow"></span>
-                                </a>     
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="about-achievements_item">
-                            <img src="images/municipal.svg" alt="">
-                            <div class="about-achievements_title">Муниципальные учреждения</div>
-                            <div class="about-achievements_text">Замещение светотехнической продукции известного итальянского бренда в ресторанах сети KFC</div>
-                            <div class="link-more">
-                                <a href="">
-                                  <span>Смотреть проект</span><span class="arrow"></span>
-                                </a>     
-                            </div>
-                          </div>
-                        </div>
+            <section class="main-section">
+              <div class="solution-product">
+                <div class="solution-banner">
+                  <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                      <div class="solution-banner_img">
+                        <img src="images/solution-img-3.png" alt="">
+                      </div>
                     </div>
+                    <div class="col-xl-5">
+                      <div class="solution-banner_text">
+                        <div class="solution-banner_text_item">
+                          <h3>Декоративное освещение пешеходных зон</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                   
                 </div>
+                <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="solution-product_item">
+                      <div class="solution-product_item-img">
+                        <img src="images/holder-steel-img.png" alt="">
+                      </div>
+                      <div class="solution-product_item-descript">
+                        <h5>Декоративная стальная опора Боллард</h5>
+                        <table class="">
+                          <thead>
+                            <tr>
+                              <th>Характеристики</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Мощность
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        11 Вт
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Световой поток
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        1185 Лм
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                Габариты опоры
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        1000 х 200 х 100
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td class="product-specification_name-td">
+                                    <div class="product-specification_name">
+                                        <span class="product-specification_name-text-wrapper">
+                                            <span class="product-specification_name-text">
+                                              Энергопотребление
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="product-specification_value">
+                                    <span class="product-specification_value-text">
+                                      10±5% Вт
+                                    </span>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul>
+                          <li>Температура эксплуатации от -50 до +50°С</li>
+                          <li>Максимальная статическая нагрузка в верхней точке опоры 280 кгс</li>
+                          <li>Мощность и КСС светодиодных модулей достигает среднего уровня освещенности 10 Лк</li>
+                        </ul>
+                        <div class="add-to-basket-button">
+                          <button class="btn">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="solution-product_item">
+                      <div class="solution-product_item-img">
+                        <img src="images/holder-steel-img.png" alt="">
+                      </div>
+                      <div class="solution-product_item-descript">
+                        <h5>Декоративная стальная опора Боллард</h5>
+                        <table class="">
+                          <thead>
+                            <tr>
+                              <th>Характеристики</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Мощность
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        28 Вт
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Световой поток
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        3660 Лм
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                Габариты опоры
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        4000 х 150 х 150
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td class="product-specification_name-td">
+                                    <div class="product-specification_name">
+                                        <span class="product-specification_name-text-wrapper">
+                                            <span class="product-specification_name-text">
+                                              Энергопотребление
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="product-specification_value">
+                                    <span class="product-specification_value-text">
+                                      28±5% Вт
+                                    </span>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul>
+                          <li>Температура эксплуатации от -50 до +50°С</li>
+                          <li>Максимальная статическая нагрузка в верхней точке опоры 280 кгс</li>
+                          <li>Мощность и КСС светодиодных модулей достигает среднего уровня освещенности 10 Лк</li>
+                        </ul>
+                        <div class="add-to-basket-button">
+                          <button class="btn">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="solution-product_item">
+                      <div class="solution-product_item-img">
+                        <img src="images/holder-steel-img.png" alt="">
+                      </div>
+                      <div class="solution-product_item-descript">
+                        <h5>Декоративная стальная опора Боллард</h5>
+                        <table class="">
+                          <thead>
+                            <tr>
+                              <th>Характеристики</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Мощность
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        28 Вт
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                  Световой поток
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        3660 Лм
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-specification_name-td">
+                                      <div class="product-specification_name">
+                                          <span class="product-specification_name-text-wrapper">
+                                              <span class="product-specification_name-text">
+                                                Габариты опоры
+                                              </span>
+                                          </span>
+                                      </div>
+                                  </td>
+                                  <td class="product-specification_value">
+                                      <span class="product-specification_value-text">
+                                        4000 х 150 х 150
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td class="product-specification_name-td">
+                                    <div class="product-specification_name">
+                                        <span class="product-specification_name-text-wrapper">
+                                            <span class="product-specification_name-text">
+                                              Энергопотребление
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="product-specification_value">
+                                    <span class="product-specification_value-text">
+                                      28±5% Вт
+                                    </span>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul>
+                          <li>Температура эксплуатации от -50 до +50°С</li>
+                          <li>Максимальная статическая нагрузка в верхней точке опоры 280 кгс</li>
+                          <li>Мощность и КСС светодиодных модулей достигает среднего уровня освещенности 10 Лк</li>
+                        </ul>
+                        <div class="add-to-basket-button">
+                          <button class="btn">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="main-section"> 
+              <div class="main-section_title">
+                <h4>Реализованные проекты</h4>
+                <div class="link-more">
+                  <a href="">
+                    <span>Смотреть все</span><span class="arrow"></span></a>
+                </div>
+              </div>
+              <div class="project-list">
+                <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="project-item">
+                      <a href="">
+                        <div class="project-item_info">
+                            <div class="project-item_title">Как повысить продуктивность спортсменов, сэкономив на освещении?</div>
+                            <span class="project-item_subtitle">Освещение ледового дворца “Кристалл”</span>
+                        </div>
+                        <div class="project-item_img">
+                          <img src="images/img-9.png" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="project-item">
+                      <a href="">
+                        <div class="project-item_info">
+                            <div class="project-item_title">Расставить акценты на главном</div>
+                            <span class="project-item_subtitle">Освещение магазина сети “Каляев”</span>
+                        </div>
+                        <div class="project-item_img">
+                          <img src="images/img-9.png" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="project-item">
+                      <a href="">
+                        <div class="project-item_info">
+                            <div class="project-item_title">Как повысить продуктивность спортсменов, сэкономив на освещении?</div>
+                            <span class="project-item_subtitle">Освещение ледового дворца “Кристалл”</span>
+                        </div>
+                        <div class="project-item_img">
+                          <img src="images/img-9.png" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="main-section"> 
+              <div class="main-section_title">
+                <h4>Услуги</h4>
+              </div>
+              <div class="row">
+                <div class="col-xl-8 col-md-12 col-lg-6">
+                  <ul class="list-without-marker">
+                    <li>
+                      <div class="list-title">
+                        Расчёт проекта
+                      </div>
+                      <p>Полный расчет необходимого количества светильников и дополнительных материалов, исходя из Ваших задач и размеров помещения и учитывая нормативные требования и ваши индивидуальные пожелания.</p>
+                      <div class="link-more">
+                        <a href="">
+                          <span>Подробнее</span><span class="arrow"></span>
+                        </a>     
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-title">
+                        Подбор аналогов существующих светильников
+                      </div>
+                      <p>Поможем вам подобрать светодиодные светильники взамен существующих комфортные и безопасные условия труда, передвижения, эффективное функционирование технологи­ческих процессов.</p>
+                      <div class="link-more">
+                        <a href="">
+                          <span>Подробнее</span><span class="arrow"></span>
+                        </a>     
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-title">
+                        Ремонт и обслуживание
+                      </div>
+                      <p>Мы с уверенностью даём гарантию до 7 лет, а по её истечению готовы принять светильники в ремонт.</p>
+                      <div class="link-more">
+                        <a href="">
+                          <span>Подробнее</span><span class="arrow"></span>
+                        </a>     
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-title">
+                        Монтаж оборудования
+                      </div>
+                      <p>Специалисты, имеющие электротехническое образование и действующую группу допуска по электробезопасности, быстро и качественно установят светильники</p>
+                      <div class="link-more">
+                        <a href="">
+                          <span>Подробнее</span><span class="arrow"></span>
+                        </a>     
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-title">
+                        Индивидуальное производство под заказ
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4 col-md-12 col-lg-6">
+                  <div class="main-form">
+                    <p class="main-form_title">Получите расчёт проекта в течение 4 часов</p>
+                    <form id="subscribe" action="">
+                      <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" id="subscribeName">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Формат: +7(777)777-77-77" class="form-input-text form-control" id="" name="" placeholder="+7(777)777-77-77">
+                      </div>      
+                      <div class="form-group">
+                        <input type="email" class="form-input-text form-control" id="subscribeEmail" name="subscribeEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" placeholder="Размер помещения" id="sizeRoom">
+                      </div>
+                      <div class="form-group">
+                        <div class="attachment-group">
+                          <div class="attachment-btn">
+                            <label for="fileInput" class="">
+                              Прикрепить файл
+                            </label>
+                            <input type="file" style="display: none"  id="fileInput" />
+                          </div>
+                          <span class="attachment_description">Файл не более 10Мб</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button class="btn" type="submit" name="">Заказать расчет</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </section>
             <div class="row">
               <div class="information col-lg-8">
