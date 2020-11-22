@@ -66,6 +66,12 @@
     $(this).find('.mini-basket-wrapper').stop(true, true).delay(200).fadeOut(500);
   });
 
+  $('.info-tooltip').hover(function() {
+    $(this).find('.info-tooltip_popup').stop(true, true).delay(200).fadeIn(500);
+  }, function() {
+    $(this).find('.info-tooltip_popup').stop(true, true).delay(200).fadeOut(500);
+  });
+
   $('.mobile-menu-button').on('click', function(e){
     e.preventDefault();
     var $mobileMenu = $(this).parents('.header-nav');
