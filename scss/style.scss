@@ -259,8 +259,10 @@ table {
                 .mini-basket-content {
                     padding: 0;
                     margin: 0;
-                    padding-bottom: 16px;
+                    margin-bottom: 24px;
                     list-style: none;
+                    max-height: 300px;
+                    overflow-y: auto;
                     li {
                         
                         padding: 12px 0; 
@@ -2702,6 +2704,9 @@ table {
     }
     .btn {
         width: auto;
+        &.green {
+            background: $success;
+        }
     }
 }
 
@@ -2845,6 +2850,13 @@ table {
                         width: 100%;
                         height: auto;
                         display: block;
+                    }
+                    &.icon {
+                        text-align: center;
+                        img {
+                            width: auto;
+                            display: inline-block;
+                        }
                     }
                 }
                 .order-list_text {

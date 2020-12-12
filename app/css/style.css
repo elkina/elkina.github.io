@@ -880,8 +880,10 @@ table {
         .header-main_controls .header-main_controls_item .order .mini-basket-wrapper .mini-basket-content {
           padding: 0;
           margin: 0;
-          padding-bottom: 16px;
-          list-style: none; }
+          margin-bottom: 24px;
+          list-style: none;
+          max-height: 300px;
+          overflow-y: auto; }
           .header-main_controls .header-main_controls_item .order .mini-basket-wrapper .mini-basket-content li {
             padding: 12px 0; }
             .header-main_controls .header-main_controls_item .order .mini-basket-wrapper .mini-basket-content li p {
@@ -2835,6 +2837,8 @@ table {
       margin: 0; }
   .add-servise .btn {
     width: auto; }
+    .add-servise .btn.green {
+      background: #599512; }
 
 /* ORDER */
 .order-block .order-step {
@@ -2950,6 +2954,11 @@ table {
           width: 100%;
           height: auto;
           display: block; }
+        .order-content .order-list .order-list_item .order-list_description .order-list_img.icon {
+          text-align: center; }
+          .order-content .order-list .order-list_item .order-list_description .order-list_img.icon img {
+            width: auto;
+            display: inline-block; }
       .order-content .order-list .order-list_item .order-list_description .order-list_text .order-list_title {
         font-family: Roboto;
         font-style: normal;
