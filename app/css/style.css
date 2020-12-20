@@ -2625,12 +2625,27 @@ table {
       width: 100%;
       height: auto;
       display: block; }
+    .banner-section .banner-section_img .promotion-badge {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      background: #FF3A46;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 22px 32px; }
   .banner-section .banner-sectionn_description {
     background-color: #004192;
     padding: 40px;
     position: absolute;
     bottom: -110px;
-    max-width: 580px; }
+    max-width: 700px; }
     .banner-section .banner-sectionn_description p {
       font-family: Roboto;
       font-style: normal;
@@ -3173,6 +3188,109 @@ table {
     display: inline-block; }
   .order-contact-data .promocode {
     max-width: 220px; }
+
+.promotion .main-section_title {
+  display: block; }
+  .promotion .main-section_title .sub-title {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313; }
+
+.promotion .promotion_item {
+  padding: 40px 0 72px; }
+  .promotion .promotion_item .promotion-product {
+    padding-bottom: 72px; }
+    .promotion .promotion_item .promotion-product .promotion-product_img {
+      margin-bottom: 24px; }
+      .promotion .promotion_item .promotion-product .promotion-product_img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 335px; }
+    .promotion .promotion_item .promotion-product table {
+      margin-bottom: 16px; }
+    .promotion .promotion_item .promotion-product .product-price-wrapper {
+      padding: 40px 40px 48px;
+      background: #F7F9FC; }
+      .promotion .promotion_item .promotion-product .product-price-wrapper .product-price_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #004192; }
+      .promotion .promotion_item .promotion-product .product-price-wrapper .product-price {
+        display: flex;
+        align-items: baseline;
+        margin: 16px 0 24px; }
+        .promotion .promotion_item .promotion-product .product-price-wrapper .product-price .product-price-new {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 56px;
+          color: #004192;
+          margin-right: 16px; }
+        .promotion .promotion_item .promotion-product .product-price-wrapper .product-price .product-price-old {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          text-decoration-line: line-through;
+          color: #817E7E; }
+      .promotion .promotion_item .promotion-product .product-price-wrapper .product-price_btn {
+        display: flex;
+        align-items: baseline; }
+        .promotion .promotion_item .promotion-product .product-price-wrapper .product-price_btn .add-to-basket-button {
+          margin-right: 16px; }
+  .promotion .promotion_item .promotion_table {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto; }
+    .promotion .promotion_item .promotion_table table thead th {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #797676;
+      text-align: right;
+      padding: 16px; }
+      .promotion .promotion_item .promotion_table table thead th:first-child {
+        text-align: left; }
+    .promotion .promotion_item .promotion_table table tbody tr {
+      background-color: #F7F9FC; }
+      .promotion .promotion_item .promotion_table table tbody tr:nth-child(2n) {
+        background-color: #ffffff; }
+      .promotion .promotion_item .promotion_table table tbody tr td {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #131313;
+        text-align: right;
+        padding: 24px 16px; }
+        .promotion .promotion_item .promotion_table table tbody tr td .btn {
+          width: auto; }
+        .promotion .promotion_item .promotion_table table tbody tr td:first-child {
+          text-align: left; }
+        @media (max-width: 768px) {
+          .promotion .promotion_item .promotion_table table tbody tr td {
+            font-size: 14px;
+            padding: 16px; } }
+
+.galery-img .galery-img_item {
+  margin: 16px 0; }
+  .galery-img .galery-img_item img {
+    width: 100%;
+    height: auto;
+    display: block; }
 
 .configuration .configuration-title {
   font-family: Roboto, Arial, sans-serif;

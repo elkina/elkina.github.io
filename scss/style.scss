@@ -1344,7 +1344,7 @@ table {
     }
     .main-section_title {
         display: flex;
-       align-items: baseline;
+        align-items: baseline;
         h4 {
             font-family: Roboto;
             font-style: normal;
@@ -2441,6 +2441,22 @@ table {
             height: auto;
             display: block;
         }
+        .promotion-badge {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            background: #FF3A46;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 22px 32px;
+        }
         position: relative;
     }
     .banner-sectionn_description {
@@ -2448,7 +2464,7 @@ table {
         padding: 40px;
         position: absolute;
         bottom: -110px;
-        max-width: 580px;
+        max-width: 700px;
         p {
             font-family: Roboto;
             font-style: normal;
@@ -3123,8 +3139,145 @@ table {
     }
 }
 
+.promotion {
+    .main-section_title {
+        display: block;
+        .sub-title {
+            display: block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #131313;
+        }
+    }
+    .promotion_item {
+        padding: 40px 0 72px;
+        .promotion-product {
+            padding-bottom: 72px;
+            .promotion-product_img {
+                margin-bottom: 24px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    max-width: 335px;
+                }
+                
+            }
+            table {
+                margin-bottom: 16px;
+            }
+            .product-price-wrapper {
+                padding: 40px 40px 48px;
+                background: #F7F9FC;
+                .product-price_title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #004192;
+                }
+                .product-price {
+                    display: flex;
+                    align-items: baseline;
+                    margin: 16px 0 24px;
+                    .product-price-new {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 48px;
+                        line-height: 56px;
+                        color: #004192;
+                        margin-right: 16px;
+                    }
+                    .product-price-old {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-decoration-line: line-through;                     
+                        color: #817E7E;                                   
+                    }
+                }
+                .product-price_btn {
+                    display: flex;
+                    align-items: baseline;
+                    .add-to-basket-button {
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+        .promotion_table {
+            width: 100%;
+            overflow-y: auto;
+            overflow-x: auto;
+            table {
+                
+                thead {
+                    th {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;            
+                        color: #797676;
+                        text-align: right;
+                        padding: 16px;
+                        &:first-child {
+                            text-align: left;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        background-color: #F7F9FC;
+                        &:nth-child(2n) {
+                            background-color: #ffffff;
+                        }
 
-
+                        td {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #131313;
+                            text-align: right;
+                            padding: 24px 16px;
+                            .btn {
+                                width: auto;
+                            }
+                            &:first-child {
+                                text-align: left;
+                            }
+                            @media (max-width: 768px) {  
+                                font-size: 14px;
+                                padding: 16px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+.galery-img {
+    .galery-img_item {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        margin: 16px 0;
+    }
+}
 
 
 
