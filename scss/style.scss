@@ -1049,12 +1049,19 @@ table {
     margin: 32px 0;
 }
 .hero-banner_container {
+    @media (max-width: 576px) {
+        margin-bottom: 16px;
+    }
     .owl-carousel  {
         position: relative;
         .owl-controls {
             position: absolute;
             right: 48px;
             bottom: 48px;
+            @media (max-width: 576px) { 
+                position: static;
+                margin: 4px 0;
+            }
             .owl-nav {
                 display: flex;
                 align-items: center;
@@ -1104,6 +1111,9 @@ table {
     .item {
         width: 100%;
         position: relative;
+        @media (max-width: 576px) { 
+            background-color: #004192;
+        }
         &:after {
             content: '';
             display: block;
@@ -1116,11 +1126,20 @@ table {
             background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, #131313 100%);
             opacity: 0.8;
             z-index: 1;
+            
+            @media (max-width: 576px) { 
+                position: static
+            }
         }
         img {
             width: 100%;
             height: auto;
             display: block;
+            @media (max-width: 576px) { 
+                position: absolute;
+                top: 0;
+                z-index: -1;
+            }
         }
         .hero-banner_info {
             position: absolute;
@@ -1128,6 +1147,10 @@ table {
             left: 48px;
             right: 48px;
             z-index: 3;
+            @media (max-width: 576px) { 
+                padding: 16px;
+                position: static;
+            }
             .hero-banner_subtitle {
                 font-family: Roboto;
                 font-style: normal;
@@ -1138,16 +1161,28 @@ table {
                 display: inline-block;
                 padding: 0;
                 margin: 4px 0;
+                @media (max-width: 576px) { 
+                    font-size: 16px;
+                }
             }
             .hero-banner_title {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 50px;
-                line-height: 135%;
+                line-height: 120%;
                 color: #FFFFFF;
                 padding: 0;
                 margin: 8px 0 16px;
+                @media (max-width: 1400px) { 
+                    font-size: 42px;
+                }
+                @media (max-width: 992px) { 
+                    font-size: 32px;
+                }
+                @media (max-width: 786px) { 
+                    font-size: 28px;
+                }
             }
             .hero-banner_general {
                 display: flex;
@@ -1242,6 +1277,10 @@ table {
                             background-image: url(../../images/ic_arrow-to.png);
                             display: inline-block;
                             margin-left: 16px;
+                        }
+                        @media (max-width: 576px) { 
+                            background-color: $primary;
+                            border: 2px solid #ffffff;
                         }
                     }
 
@@ -2427,7 +2466,7 @@ table {
     }
 }
 .banner-section {
-    padding-bottom: 200px;
+    padding-bottom: 60px;
     @media (max-width: 1200px) { 
         padding-bottom: 50px;
     }
@@ -3216,6 +3255,15 @@ table {
             width: 100%;
             overflow-y: auto;
             overflow-x: auto;
+            h5 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                color: #131313;
+                margin: 16px 0 8px;
+            }
             table {
                 
                 thead {

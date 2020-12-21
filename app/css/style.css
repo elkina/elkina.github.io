@@ -1495,12 +1495,20 @@ table {
 .hero-banner-section {
   margin: 32px 0; }
 
+@media (max-width: 576px) {
+  .hero-banner_container {
+    margin-bottom: 16px; } }
+
 .hero-banner_container .owl-carousel {
   position: relative; }
   .hero-banner_container .owl-carousel .owl-controls {
     position: absolute;
     right: 48px;
     bottom: 48px; }
+    @media (max-width: 576px) {
+      .hero-banner_container .owl-carousel .owl-controls {
+        position: static;
+        margin: 4px 0; } }
     .hero-banner_container .owl-carousel .owl-controls .owl-nav {
       display: flex;
       align-items: center; }
@@ -1539,6 +1547,9 @@ table {
 .hero-banner_container .item {
   width: 100%;
   position: relative; }
+  @media (max-width: 576px) {
+    .hero-banner_container .item {
+      background-color: #004192; } }
   .hero-banner_container .item:after {
     content: '';
     display: block;
@@ -1551,16 +1562,28 @@ table {
     background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, #131313 100%);
     opacity: 0.8;
     z-index: 1; }
+    @media (max-width: 576px) {
+      .hero-banner_container .item:after {
+        position: static; } }
   .hero-banner_container .item img {
     width: 100%;
     height: auto;
     display: block; }
+    @media (max-width: 576px) {
+      .hero-banner_container .item img {
+        position: absolute;
+        top: 0;
+        z-index: -1; } }
   .hero-banner_container .item .hero-banner_info {
     position: absolute;
     bottom: 48px;
     left: 48px;
     right: 48px;
     z-index: 3; }
+    @media (max-width: 576px) {
+      .hero-banner_container .item .hero-banner_info {
+        padding: 16px;
+        position: static; } }
     .hero-banner_container .item .hero-banner_info .hero-banner_subtitle {
       font-family: Roboto;
       font-style: normal;
@@ -1571,15 +1594,27 @@ table {
       display: inline-block;
       padding: 0;
       margin: 4px 0; }
+      @media (max-width: 576px) {
+        .hero-banner_container .item .hero-banner_info .hero-banner_subtitle {
+          font-size: 16px; } }
     .hero-banner_container .item .hero-banner_info .hero-banner_title {
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
       font-size: 50px;
-      line-height: 135%;
+      line-height: 120%;
       color: #FFFFFF;
       padding: 0;
       margin: 8px 0 16px; }
+      @media (max-width: 1400px) {
+        .hero-banner_container .item .hero-banner_info .hero-banner_title {
+          font-size: 42px; } }
+      @media (max-width: 992px) {
+        .hero-banner_container .item .hero-banner_info .hero-banner_title {
+          font-size: 32px; } }
+      @media (max-width: 786px) {
+        .hero-banner_container .item .hero-banner_info .hero-banner_title {
+          font-size: 28px; } }
     .hero-banner_container .item .hero-banner_info .hero-banner_general {
       display: flex;
       justify-content: flex-start;
@@ -1660,6 +1695,10 @@ table {
           background-image: url(../../images/ic_arrow-to.png);
           display: inline-block;
           margin-left: 16px; }
+        @media (max-width: 576px) {
+          .hero-banner_container .item .hero-banner_info .hero-banner_general .hero-banner_btn .btn-link {
+            background-color: #004192;
+            border: 2px solid #ffffff; } }
 
 .main-form {
   width: 100%;
@@ -2613,7 +2652,7 @@ table {
     font-weight: bold; }
 
 .banner-section {
-  padding-bottom: 200px; }
+  padding-bottom: 60px; }
   @media (max-width: 1200px) {
     .banner-section {
       padding-bottom: 50px; } }
@@ -3252,6 +3291,14 @@ table {
     width: 100%;
     overflow-y: auto;
     overflow-x: auto; }
+    .promotion .promotion_item .promotion_table h5 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 135%;
+      color: #131313;
+      margin: 16px 0 8px; }
     .promotion .promotion_item .promotion_table table thead th {
       font-family: Roboto;
       font-style: normal;
