@@ -1123,7 +1123,7 @@ table {
             right: 0;
             top: 0;
             bottom: 0;
-            background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, #131313 100%);
+            background: linear-gradient(180deg, rgba(1, 54, 121, 0) 0%, #013679 100%);
             opacity: 0.8;
             z-index: 1;
             
@@ -3179,6 +3179,7 @@ table {
 }
 
 .promotion {
+    
     .main-section_title {
         display: block;
         .sub-title {
@@ -3315,6 +3316,20 @@ table {
         }
     }
     
+}
+.promotion-banner {
+    &.hero-banner_container {
+        .item {
+            .hero-banner_info {
+            .hero-banner_title {
+                @media (min-width: 992px) {  
+                    font-size: 42px;
+                }
+        }
+            }
+        }
+    }
+        
 }
 .galery-img {
     .galery-img_item {
