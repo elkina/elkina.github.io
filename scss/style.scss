@@ -2766,6 +2766,12 @@ table {
             background: $success;
         }
     }
+    @media (max-width: 576px) {  
+        display: block;
+        div {
+            margin-bottom: 16px;
+        }
+    }
 }
 
 
@@ -3023,7 +3029,7 @@ table {
                         line-height: 24px;
                        }
                        .order-list_vendor-code {
-    
+                        font-size: 14px;
                        }
                     }
                 }
@@ -3788,6 +3794,9 @@ table {
                     }
                     
                 }
+                @media (max-width: 576px) {  
+                    padding: 0;
+                }  
             }
             .product-manipulation {
                 width: 100%;
