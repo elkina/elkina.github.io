@@ -1572,7 +1572,7 @@ table {
     display: block; }
     @media (max-width: 576px) {
       .hero-banner_container .item img {
-        position: absolute;
+        position: static;
         top: 0;
         z-index: -1; } }
   .hero-banner_container .item .hero-banner_info {
@@ -1819,6 +1819,9 @@ table {
       .main-section .main-section_sorting .sorting_item.active a {
         color: #FFFFFF;
         background-color: #004192; }
+    @media (max-width: 576px) {
+      .main-section .main-section_sorting {
+        flex-direction: column; } }
 
 .link-more {
   display: flex; }
@@ -2384,6 +2387,11 @@ table {
     color: #FFFFFF;
     margin: 16px 0 8px;
     padding: 0; }
+  @media (max-width: 576px) {
+    .main-banner .main-banner_wrap .main-banner_text h1 {
+      font-size: 32px; }
+    .main-banner .main-banner_wrap .main-banner_text p {
+      font-size: 18px; } }
 
 .about-mission {
   position: relative;
@@ -2696,11 +2704,17 @@ table {
       color: #FFFFFF; }
     .banner-section .banner-sectionn_description .solution-description_price {
       color: #ffffff; }
+    @media (max-width: 1200px) {
+      .banner-section .banner-sectionn_description {
+        bottom: -60px; } }
     @media (max-width: 992px) {
       .banner-section .banner-sectionn_description {
         bottom: 0;
         max-width: auto;
         width: 100%; } }
+    @media (max-width: 786px) {
+      .banner-section .banner-sectionn_description {
+        position: relative; } }
 
 .solution-description {
   position: relative; }
@@ -2722,6 +2736,9 @@ table {
       line-height: 145%;
       color: #131313;
       margin: 16px 0 8px; }
+    @media (max-width: 786px) {
+      .solution-description .solution-description_item .solution-description_second h3 {
+        font-size: 24px; } }
     .solution-description .solution-description_item .solution-description_second .info-tooltip {
       display: inline-block;
       position: relative; }
@@ -2745,7 +2762,11 @@ table {
         z-index: 1300;
         display: none;
         align-self: first baseline;
-        flex-direction: column; }
+        flex-direction: column;
+        visibility: hidden; }
+        .solution-description .solution-description_item .solution-description_second .info-tooltip .info-tooltip_popup.active {
+          visibility: visible;
+          display: block; }
         .solution-description .solution-description_item .solution-description_second .info-tooltip .info-tooltip_popup p {
           font-family: Roboto;
           font-style: normal;

@@ -66,10 +66,25 @@
     $(this).find('.mini-basket-wrapper').stop(true, true).delay(200).fadeOut(500);
   });
 
-  $('.info-tooltip').hover(function() {
-    $(this).find('.info-tooltip_popup').stop(true, true).delay(200).fadeIn(500);
+  // $('.info-tooltip').hover(function() {
+  //   $(this).find('.info-tooltip_popup').stop(true, true).delay(200).fadeIn(500);
+  // }, function() {
+  //   $(this).find('.info-tooltip_popup').stop(true, true).delay(200).fadeOut(500);
+  // });
+  $('.info-tooltip').hover( function(e) {
+    e.preventDefault();
+    $(this).find('.info-tooltip_popup').addClass('active');
   }, function() {
-    $(this).find('.info-tooltip_popup').stop(true, true).delay(200).fadeOut(500);
+    $(this).find('.info-tooltip_popup').removeClass('active');
+  });
+  $('.info-tooltip').on('click', function(e) {
+    e.preventDefault();
+    if ($(this).find('.info-tooltip_popup').hasClass('active')){
+      $(this).find('.info-tooltip_popup').removeClass('active');
+    } else {
+      $(this).find('.info-tooltip_popup').addClass('active');
+    }
+ 
   });
 
   $('.mobile-menu-button').on('click', function(e){
