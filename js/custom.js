@@ -108,7 +108,10 @@ $('.owl-carousel').owlCarousel({
   itemsMobile : true,
   responsive:{
       0:{
-          items:2
+          items:1
+      },
+      480:{
+        items:2
       },
       768:{
           items:3
@@ -265,3 +268,76 @@ $(document).ready(function() {
 		}
 	});
 });
+
+
+
+(function carouselStart(){
+  var widthView = $(window).width();
+  if (widthView > 768) {
+    carouselVert(); 
+  } 
+  $(window).resize(function() {   
+      var widthView = $(window).width();
+      if (widthView > 768) {
+        carouselVert(); 
+      } 
+  });
+})();
+
+function carouselVert(){
+  let width = 120; // ширина картинки
+  let height = 120;
+  let count = 4; // видимое количество изображений
+  
+  let list = carousel.querySelector('ul');
+  let listElems = carousel.querySelectorAll('li');
+  
+  let position = 0; // положение ленты прокрутки
+  
+  carousel.querySelector('.prev').onclick = function() {
+    // сдвиг влево
+    position += height * count;
+    // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+    position = Math.min(position, 0)
+    list.style.marginTop = position + 'px';
+  };
+  
+  carousel.querySelector('.next').onclick = function() {
+    // сдвиг вправо
+    position -= height * count;
+    // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+    position = Math.max(position, -height * (listElems.length - count));
+    list.style.marginTop = position + 'px';
+  };
+};
+
+
+
+/* конфигурация */
+
+
+
+// /* конфигурация */
+// let width = 120; // ширина картинки
+// let count = 4; // видимое количество изображений
+
+// let list = carousel.querySelector('ul');
+// let listElems = carousel.querySelectorAll('li');
+
+// let position = 0; // положение ленты прокрутки
+
+// carousel.querySelector('.prev').onclick = function() {
+//   // сдвиг влево
+//   position += width * count;
+//   // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+//   position = Math.min(position, 0)
+//   list.style.marginLeft = position + 'px';
+// };
+
+// carousel.querySelector('.next').onclick = function() {
+//   // сдвиг вправо
+//   position -= width * count;
+//   // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+//   position = Math.max(position, -width * (listElems.length - count));
+//   list.style.marginLeft = position + 'px';
+// };

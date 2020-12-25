@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+      <link type="text/css" rel="stylesheet" href="app/css/style.css"  media="screen,projection"/>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+      <title>Трековый диммируемый светильник</title>
+    </head>
+    <body>
+        <header class="header-main">
+            <div class="header-main_top">
+            <div class="container">
+                <div class="header-main_top_info">
+                    <span>Производитель светодиодного освещения. Собственная торговая марка "СДСВЕТ". Оптовые поставки по всей РФ.</span>
+                </div>
+                <div class="header-main_top_button">
+                    <span data-toggle="modal" data-target="#proposal-modal">Оставить заявку</span>
+                </div>
+            </div>
+            </div>
+            <div class="header-main_area">
+            <div class="container">
+                <div class="header-main_logo">
+                <a href="catalog.html">
+                    <img src="images/logo.svg" alt="СДСВET: Cветодиодное и индукционное светотехническое оборудование" title="СДСВET: Cветодиодное и индукционное светотехническое оборудование">
+                </a>
+                </div>
+                <div class="header-main_info">
+                <div class="header-main_info_item">
+                    <div class="location">
+                    <a href="https://www.google.com/maps/place/%D0%90%D0%9B%D0%AC%D0%A2%D0%90,+%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BE-%D0%BE%D1%84%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80/@55.91639,37.7700533,17z/data=!4m5!3m4!1s0x0:0x6353636e681042e0!8m2!3d55.9163902!4d37.772242">
+                        <i>
+                        <img src="images/ic_address.svg" alt="">
+                        </i>
+                        <span>
+                        Мытищи, Олимпийский пр-кт 10, ТЦ “Альта”, офис 405
+                        <span class="description">Пн-Пт с 9:00 до 17:30</span>
+                        </span>
+                    </a>
+                    </div>
+                </div>
+                <div class="header-main_info_item">
+                    <div class="phone">
+                    <a href="tel:+74955894050">
+                        <i>
+                        <img src="images/ic_phone.svg" alt="">
+                        </i>
+                        <span>+7(495)589-40-50</span>
+                    </a> 
+                    </div>
+                </div>
+                <div class="header-main_info_item">
+                    <div class="email">
+                    <a href="mailto:sdsvet@sdsvet.ru">
+                        <i>
+                        <img src="images/ic_email.svg" alt="">
+                        </i>
+                        <span>sdsvet@sdsvet.ru</span>
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <div class="header-main_controls">
+                <div class="header-main_controls_item">
+                    <div class="login unauthorized" >
+                    <span class="btn">Войти</span>
+                    <!-- <span >Краснопольский Алексей</span> -->
+                    </div>
+                </div>
+                <div class="header-main_controls_item">
+                    <div class="order ordered">
+                    <a href="" class="order-link" data-toggle="dropdown">
+                        <span class="bage">24</span>
+                    </a>
+                    <div class="mini-basket-wrapper">
+                        <ul class="mini-basket-content">
+                        <li>
+                            <p>Трековый светильник Track</p>
+                            <span>60 шт.</span>
+                        </li>
+                        <li>
+                            <p>Трековый светильник Track</p>
+                            <span>10 шт.</span>
+                        </li>
+                        </ul>
+                        <button class="btn">Оформить заказ</button>
+                    </div>  
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="header-main_bottom" id="nav-menu">
+            <div class="container">
+                <nav class="header-nav">
+                    <span class="mobile-menu-button">
+                      <img src="images/ic_catalog-mobile.svg" alt="">
+                    </span>
+                    <span class="mobile-menu-close">
+                      <img src="images/ic_close.svg" alt="">
+                    </span>
+                    <div class="header-nav-wrapper">
+                      <ul class="header-nav_list">
+                        <li class="header-nav_item">
+                          <div class="header-nav_link nav-icon">
+                            <a href=""><span></span>Каталог</a>
+                          </div>
+                          <ul class="header-nav_dropdown">
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Наружное</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">HoReCa</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Промышленные</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="category.html">Акцентное</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Офисное</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">ЖКХ</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Аварийные</a>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Системы управления</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-nav_item">
+                          <div class="header-nav_link">
+                            <a href="">Готовые решения</a>
+                          </div>
+                          <ul class="header-nav_dropdown">
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Торгово-офисные</a>
+                              <ul class="header-nav_dropdown_sublist">
+                                <li>
+                                  <a href="">Торговые и бизнес центры</a>
+                                </li>
+                                <li>
+                                  <a href="">Аптеки/Парикмахерские</a>
+                                </li>
+                                <li>
+                                  <a href="">Гостиницы/Банки</a>
+                                </li>
+                                <li>
+                                  <a href="">Офисные пространства</a>
+                                </li>
+                                <li>
+                                  <a href="">Муниципальные объекты</a>
+                                </li>
+                                <li>
+                                  <a href="">Ресторанный бизнес</a>
+                                </li>
+                                <li>
+                                  <a href="">Подсобные помещения</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Производственные</a>
+                              <ul class="header-nav_dropdown_sublist">
+                                <li>
+                                  <a href="">Склады/Ангары</a>
+                                </li>
+                                <li>
+                                  <a href="">Заводы/Цеха</a>
+                                </li>
+                                <li>
+                                  <a href="">Логистические комплексы</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="header-nav_dropdown_list">
+                              <a href="">Общественные пространства</a>
+                              <ul class="header-nav_dropdown_sublist">
+                                <li>
+                                  <a href="">Спортивные объекты</a>
+                                </li>
+                                <li>
+                                  <a href="">Парковки и открытые территории</a>
+                                </li>
+                                <li>
+                                  <a href="">Улицы и автодороги</a>
+                                </li>
+                                <li>
+                                  <a href="">ЖК и дворовые территории</a>
+                                </li>
+                                <li>
+                                  <a href="">Пешеходные и парковые зоны</a>
+                                </li>
+                                <li>
+                                  <a href="">Фасадная и архитектурная подсветка</a>
+                                </li>
+                                <li>
+                                  <a href="">Пешеходные переходы</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-nav_item">
+                          <div class="header-nav_link">
+                            <a href="">Проекты</a>
+                          </div>
+                        </li>
+                        <li class="header-nav_item">
+                          <div class="header-nav_link">
+                            <a href="">Услуги</a>
+                          </div>
+                        </li>
+                        <li class="header-nav_item">
+                          <div class="header-nav_link">
+                            <a href="">Проектировщикам</a>
+                          </div>
+                        </li>
+                        <li class="header-nav_item">
+                          <div class="header-nav_link">
+                            <a href="">Акции</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                <div class="header-main_search">
+                <div class="search-group">
+                    <form action="">
+                        <input type="text" placeholder="Поиск по каталогу" class="search-input">
+                    </form> 
+                    <span class="search-icon"></span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </header>  
+        <main class="main-wrapper">
+            <div class="container">
+                <div class="breadcrumb">
+                    <span>
+                    <span class="breadcrumb-link">
+                        <a href="">Главная</a>
+                    </span>
+                    <span class="breadcrumb-separator">/</span>
+                    </span>
+                    <span>
+                    <span class="breadcrumb-link">
+                        <a href="">Каталог продукции</a>
+                    </span>
+                    <span class="breadcrumb-separator">/</span>
+                    </span>
+                    <span>
+                        <span class="breadcrumb-link">
+                        <a href="">Акцентное освещение</a>
+                        </span>
+                        <span class="breadcrumb-separator">/</span>
+                    </span>
+                    <span>
+                    <span class="breadcrumb-link">
+                        Трековый диммируемый светильник
+                    </span>
+                    <span class="breadcrumb-separator">/</span>
+                    </span>
+                </div>
+                <h1 class="main-title">Трековый диммируемый светильник</h1>
+                <div class="configuration">
+                    <div class="configuration-title">
+                        Выбор конфигурации
+                    </div>
+                    <div class="configuration-block">
+                        <div class="configuration_item">
+                            <label class="checkbox-label" id="verifyLabel2">
+                                <input class="check-button" value="all" type="checkbox" name="verifyInput2" id="verifyInput2" checked>
+                                <span class="root-check"></span>
+                                <span class="">Диммируемый</span>
+                            </label>
+                        </div>
+                        <div class="configuration_item">
+                            <div>
+                                <label class="label" for="">КСС</label>
+                                <select class="select" name="" id="">
+                                    <option value="">Не выбран</option>
+                                    <option value="">Пункт 1</option>
+                                    <option value="">Пункт 2</option>
+                                    <option value="">Пункт 3</option>
+                                    <option value="">Пункт 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="configuration_item">
+                            <div>
+                                <label class="label" for="">Цвет</label>
+                                <select class="select" name="" id="">
+                                    <option value="">Не выбран</option>
+                                    <option value="">Пункт 1</option>
+                                    <option value="">Пункт 2</option>
+                                    <option value="">Пункт 3</option>
+                                    <option value="">Пункт 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="configuration_item">
+                            <button class="btn">Изменить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="vendor-code">
+                        <h3>SDSBET-LED/TRACK/14W/2400K/60 (BLACK)</h3>
+                        <span class="promotional pop" data-container="body" data-toggle="popover" data-placement="top" data-content="Скидка 25% до 31.09.2020<a href=&quot;http://promotional.html&quot; target=&quot;_blank&quot;>Подробнее...</a>" data-original-title="" title="">
+                            Акция
+                        </span>
+                    </div>
+                    <section class="product-card">
+                        <div class="row">
+                            <div class="product-media col-md-6 col-xs-12">
+                                <div class="product-gallery">
+                                    <div class="product-gallery_inner">
+                                        <div id="carousel" class="carousel">
+                                            <div class="arrow prev"></div>
+                                            <div class="gallery" >
+                                            <ul class="images" id="thumbnails">
+                                                <li class="item active"><img class="thumbnails-img" src="images/product_1.png"></li>
+                                                <li class="item"><img class="thumbnails-img" src="images/product_3.png"></li>
+                                                <li class="item"><img class="thumbnails-img" src="images/product_4.png"></li>
+                                                <li class="item">
+                                                    <a href="">
+                                                        <img src="images/ic_player.svg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="item"><img class="thumbnails-img" src="images/product_1.png"></li>
+                                                <li class="item"><img class="thumbnails-img" src="images/product_4.png"></li>
+                                                <li class="item"><img class="thumbnails-img" src="images/product_1.png"></li>                                               
+                                            </ul>
+                                            </div>
+                                            <div class="arrow next"></div>
+                                        </div>
+                                    </div>
+                                    <div class="image-preview">
+                                        <img id="largeImage" src="images/product_1.png" />
+                                    </div>
+                                </div>                        
+                                <ul class="product-informations-download">
+                                    <li class="product-informations-item"><img src="images/ic_certfcate.svg" alt=""><span>Сертификаты</span></li>
+                                    <li class="product-informations-item"><img src="images/ic_passport.svg" alt=""><span>Паспорт</span></li>
+                                    <li class="product-informations-item"><img src="images/ic_ies.svg" alt=""><span>IES</span></li>
+                                    <li class="product-informations-item"><img src="images/ic_bm.svg" alt=""><span>BIM</span></li>
+                                    <li class="product-informations-item"><img src="images/ic_drawing.svg" alt=""><span>Чертеж</span></li>
+                                </ul>
+                            </div>
+                            <div class="product-data col-md-6 col-xs-12">
+                                <div class="row">
+                                    <div class="product-data_item col-xl-8 col-md-12 col-xs-12">
+                                        <!-- Сообщение о необходимости выбрать конфигурацию -->
+                                        <div class="product-price-wrapper">
+                                            <div class="product-price-noticeChoose">
+                                                Чтобы узнать цену и наличие выберите конфигурацию
+                                            </div>
+                                        </div>
+                                        <div class="product-price-wrapper">
+                                            <div class="product-price">3000₽</div>
+                                            <ul class="product-terms">
+                                                <li class="product-terms_item">
+                                                    <div class="product-terms-availability">
+                                                        В наличии на складе: <span>7 шт</span> 
+                                                    </div>
+                                                    <div class="product-terms-delivery-time">
+                                                        Срок <span>3 дня</span>
+                                                    </div>
+                                                </li>
+                                                <li class="product-terms_item">
+                                                    <div class="product-terms-availability">
+                                                        Под заказ
+                                                    </div>
+                                                    <div class="product-terms-delivery-time">
+                                                        <span >
+                                                            Срок изготовления <span>3 недели</span><i class="pop" data-container="body" data-toggle="popover" data-placement="top" data-content="Срок поставки может быть меньше или больше указанного, после оформления заказа менеджер рассчитает точный срок поставки" data-original-title="" title=""></i>
+                                                        </span>                                                        
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <form action="">
+                                            <div class="form-group order-calculation">
+                                                <label class="checkbox-label" id="orderCalculation">
+                                                  <input class="check-button" value="all" type="checkbox" name="orderCalculationInput" id="orderCalculationInput">
+                                                  <span class="root-check"></span>
+                                                  <span class="">Заказать расчет</span>
+                                                </label>
+                                              </div>   
+                                                <div class="add-to-basket-form">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="product-specification-main">
+                                            <table class="product-specification_table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="product-specification_name-td">
+                                                            <div class="product-specification_name">
+                                                                <span class="product-specification_name-text-wrapper">
+                                                                    <span class="product-specification_name-text">
+                                                                        Мощность
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="product-specification_value">
+                                                            <span class="product-specification_value-text">
+                                                                14 Вт
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="product-specification_name-td">
+                                                            <div class="product-specification_name">
+                                                                <span class="product-specification_name-text-wrapper">
+                                                                    <span class="product-specification_name-text">
+                                                                        Световой поток
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="product-specification_value">
+                                                            <span class="product-specification_value-text">
+                                                                1400 Лм
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="product-specification_name-td">
+                                                            <div class="product-specification_name">
+                                                                <span class="product-specification_name-text-wrapper">
+                                                                    <span class="product-specification_name-text">
+                                                                        Коррелированная цветовая температура
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="product-specification_value">
+                                                            <span class="product-specification_value-text">
+                                                                2400 К
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="product-specification_more"><a href="#product-specification-all">Все характеристики</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-data_item col-xl-4 col-md-12 col-xs-12">
+                                        <ul class="product-manipulation">
+                                            <li class="add-wishlist"><a href="">В избранное</a></li>
+                                            <li class="compare"><a href="">Сравнить аналоги</a></li>
+                                            <li class="delivery"><a href="">Условия доставки</a></li>
+                                            <li class="guarantee"><a href="">Гарантия 3 года</a></li>
+                                            <!-- <li class="order-calculation"><span data-toggle="modal" data-target="#orderCalculation-modal">Заказать расчет</span></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="product-specification-all" class="product-specification-all">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item active">
+                                <a class="nav-link" id="specifications-tab" data-toggle="tab" href="#specifications" role="tab" aria-controls="specifications" aria-selected="true">Характеристики</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">Описание</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="productSpecification">
+                            <div class="tab-pane show active" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12">
+                                        <table class="product-specification_table col-md-6 col-xs-12">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="product-specification_name-td">
+                                                        <div class="product-specification_name">
+                                                            <span class="product-specification_name-text-wrapper">
+                                                                <span class="product-specification_name-text">
+                                                                    Мощность
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-specification_value">
+                                                        <span class="product-specification_value-text">
+                                                            14 Вт
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-specification_name-td">
+                                                        <div class="product-specification_name">
+                                                            <span class="product-specification_name-text-wrapper">
+                                                                <span class="product-specification_name-text">
+                                                                    Световой поток
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-specification_value">
+                                                        <span class="product-specification_value-text">
+                                                            1400 Лм
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-specification_name-td">
+                                                        <div class="product-specification_name">
+                                                            <span class="product-specification_name-text-wrapper">
+                                                                <span class="product-specification_name-text">
+                                                                    Коррелированная цветовая температура
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-specification_value">
+                                                        <span class="product-specification_value-text">
+                                                            2400 К
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <table class="product-specification_table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="product-specification_name-td">
+                                                        <div class="product-specification_name">
+                                                            <span class="product-specification_name-text-wrapper">
+                                                                <span class="product-specification_name-text">
+                                                                    Мощность
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-specification_value">
+                                                        <span class="product-specification_value-text">
+                                                            14 Вт
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-specification_name-td">
+                                                        <div class="product-specification_name">
+                                                            <span class="product-specification_name-text-wrapper">
+                                                                <span class="product-specification_name-text">
+                                                                    Световой поток
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-specification_value">
+                                                        <span class="product-specification_value-text">
+                                                            1400 Лм
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-specification_name-td">
+                                                        <div class="product-specification_name">
+                                                            <span class="product-specification_name-text-wrapper">
+                                                                <span class="product-specification_name-text">
+                                                                    Коррелированная цветовая температура
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-specification_value">
+                                                        <span class="product-specification_value-text">
+                                                            2400 К
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>  
+                                        </table>
+                                    </div>                                                                       
+                                </div>                                                                 
+                            </div>
+                            <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                            </div>
+                          </div>
+                    </section>
+                    <section class="main-products-block">	    		
+                        <div class="carousel-header-block">
+                            <h4>Комплектующие</h4>
+                        </div>
+                        <div class="carousel-block clearfix">
+                            <div class="owl-carousel">
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn" data-dismiss="alert">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="product-description">
+                                                <div>
+                                                    <span class="ic_color">
+                                                        <img src="images/ic_color-white.svg" alt="">
+                                                    </span>
+                                                    Белый
+                                                </div>
+                                                <div>
+                                                    <span class="ic_lm">
+                                                        <img src="images/ic_size.svg" alt="">
+                                                    </span>
+                                                    3 м
+                                                </div>
+                                            </div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-number">
+                                                            <div class="quantity-block">
+                                                                <span class="quantity-arrow-minus"></span>
+                                                                <input class="quantity-num" type="number" value="1" />
+                                                                <span class="quantity-arrow-plus"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </section>
+                    <section class="main-products-block">	    		
+                        <div class="carousel-header-block">
+                            <h4>Дополнительное оборудование</h4>
+                        </div>
+                        <div class="carousel-block clearfix">
+                            <div class="owl-carousel">
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="catalogue-item">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="images/product_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-name">Трековый светильник</div>
+                                            <div class="add-to-basket-form">
+                                                <form action="">
+                                                    <div class="add-to-basket-form_wrapper">
+                                                        <div class="add-to-basket-button">
+                                                            <button class="btn">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                          
+                                        </div>   				
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </section>
+                    <section class="product-project">
+                        <h4 class="section-title">Проект с моделью “SDSBET-LED/TRACK”</h4>
+                        <div class="product-project-wrapper row">
+                            <div class="product-project_media col-lg-6 col-md-12">
+                                <div class="product-project_logo"><img src="images/logo_farsh.png" alt=""></div>
+                                <div class="product-project_image"><img src="images/img-project_1.png" alt=""></div>
+                            </div>   
+                            <div class="product-project_description col-lg-5 col-md-12">
+                                <div class="product-project_title">Переоснащение ресторана с разработкой концепции освещения</div>
+                                <div class="product-project_profit">
+                                    <div class="">
+                                        <span class="product-project_profit-amount">35 000₽</span>
+                                        <span class="product-project_profit-name">Экономия электроэнергии</span>
+                                    </div>
+                                    <div class="">
+                                        <span class="product-project_profit-amount">20 000₽</span>
+                                        <span class="product-project_profit-name">Снижение эксплуатационных затраты</span>
+                                    </div>
+                                </div>
+                                <div class="product-project_cta">
+                                    <div>
+                                        <a class="btn" href="">Посмотреть проект</a>
+                                    </div>
+                                </div>
+                                <div class="product-project_review">
+                                    <div class="product-project_review-text">
+                                        “Освещение значение в общественных местах, куда люди приходят отдохнуть и интересно провести время играет главную роль. Правильно расставленные акценты в освещении стимулирует у людей аппетит, создают теплую и комфортную атмосферу.”
+                                    </div>
+                                    <div class="product-project_review-author">
+                                        <div class="review-author-img"><img src="images/ava_1.png" alt=""></div>
+                                        <div class="review-author">
+                                            <span class="review-author_name">Маргарита Титова</span>
+                                            <span class="review-author_job-position">проектный менеджер</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </section>
+                    <div class="information col-lg-8">
+                        <p><sup>*</sup>Представленная информация о ценах и наличии товаров на сайте не является публичной офертой, для уточнения актуальных цен и ассортимента обращайтесь по телефону: <a href="tel:+74955894050">+7(495)589-40-50</a></p>
+                    </div>
+                </div>
+            </div>  
+        </main> 
+        <footer class="footer">
+            <div class="footer-main">
+            <div class="container">
+                <div class="footer-main_top">
+                <div class="row">
+                    <div class="footer-nav col-xl-9 col-lg-8 col-md-7">
+                        <ul class="footer-nav_item">
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Интересные статьи</a></li>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Акции</a></li>
+                        </ul>
+                        <ul class="footer-nav_item ">
+                        <li><a href="">Партнерам</a></li>
+                        <li><a href="">Видеопрезентации</a></li>
+                        <li><a href="">Бланк расчета</a></li>
+                        <li><a href="">Скачать презентации</a></li>
+                        </ul>
+                        <ul class="footer-nav_item">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Работа в компании</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-subscribe col-xl-3 col-lg-4 col-md-5">
+                        <p>В нашей рассылке только полезное. Акции, новости и события отрасли.</p>
+                        <form id="subscribe" action="">
+                          <div class="form-group">
+                            <input type="text" placeholder="Имя" id="subscribeName">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-input-text form-control" id="subscribeEmail" type="email" name="subscribeEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                          </div>
+                          <div class="form-group">
+                            <div data-toggle="modal" data-target="#subscribe-modal">
+                              <button class="btn">Подписаться</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+                <div class="footer-main_bottom">
+                <div class="row">
+                    <div class="footer-main_info col-xl-9 col-lg-8 col-md-12">
+                    <div class="footer-main_info_item">
+                        <div class="location">
+                        <a href="https://www.google.com/maps/place/%D0%90%D0%9B%D0%AC%D0%A2%D0%90,+%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BE-%D0%BE%D1%84%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80/@55.91639,37.7700533,17z/data=!4m5!3m4!1s0x0:0x6353636e681042e0!8m2!3d55.9163902!4d37.772242">
+                            <i>
+                            <img src="images/ic_address.svg" alt="">
+                            </i>
+                            <span>
+                            Мытищи, Олимпийский пр-кт 10, ТЦ “Альта”, офис 405
+                            <span class="description">Пн-Пт с 9:00 до 17:30</span>
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="footer-main_info_item">
+                        <div class="phone">
+                            <a href="tel:+74955894050">
+                                <i>
+                                <img src="images/ic_phone.svg" alt="">
+                            </i>
+                            <span>+7(495)589-40-50</span>
+                        </a> 
+                        </div>
+                        </div>
+                            <div class="footer-main_info_item">
+                            <div class="email">
+                            <a href="mailto:sdsvet@sdsvet.ru">
+                                <i>
+                                <img src="images/ic_email.svg" alt="">
+                                </i>
+                                <span>sdsvet@sdsvet.ru</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="footer-main_social col-xl-3 col-lg-4">
+                        <ul>
+                            <li class="footer-main-social_item"><a href=""><img src="images/ic_facebook.png" alt="facebook"></a></li>
+                            <li class="footer-main-social_item"><a href=""><img src="images/ic_youtube.png" alt="youtube"></a></li>
+                            <li class="footer-main-social_item"><a href=""><img src="images/ic_insta.png" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="footer-copyrite">
+                <div class="container">
+                <span>© 2012-2020  Все права защищены! </span>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade bs-example-modal-lg" id="proposal-modal" tabindex="-1" role="dialog" aria-labelledby="proposal-modal-label">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="close-address-btn" data-dismiss="modal" aria-hidden="true"><img src="images/ic_close.svg" alt=""></div>           
+                        <form action="" id="proposalForm" >
+                          <h3>Оставьте заявку и получите персональное коммерческое предложение</h3>
+                          <div class="row">
+                            <div class="form-group col-md-6 col-xs-12">
+                              <label class="label" for="">Имя</label>
+                              <input type="text" class="form-input-text form-control" id="proposalName" name="name" placeholder="Имя">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-12">
+                              <label class="label" for="">Телефон</label>
+                              <input type="text" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Формат: +7(777)777-77-77" class="form-input-text form-control" id="proposalPhone" name="proposalName" placeholder="+7(777)777-77-77">
+                            </div>
+                            <div class="form-group col-md-12 col-xs-12">
+                              <label class="label" for="">E-mail</label>
+                              <input type="email" class="form-input-text form-control" id="proposalEmail" type="email" name="proposalEmail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
+                            <div class="form-group-description col-12"><p>Данные помещения</p></div>
+                            <div class="form-group three-items col-12">
+                              <div class="form-group-item">
+                                <label class="label" for="">Длина, мм</label>
+                                <input type="text" pattern="^[0-9]+$" class="number">
+                              </div>
+                              <div class="form-group-item">
+                                <label class="label" for="">Ширина, мм</label>
+                                <input type="text" pattern="^[0-9]+$" class="number">
+                              </div>
+                              <div class="form-group-item">
+                                <label class="label" for="">Высота, мм</label>
+                                <input type="text" pattern="^[0-9]+$" class="number">
+                              </div>
+                            </div>
+                            <div class="form-group col-12">
+                              <label class="label" for="">Объект</label>
+                              <input type="text">
+                            </div>
+                            <div class="form-group col-12">
+                              <label class="label" for="">Назначение</label>
+                              <input type="text">
+                            </div>
+                            <div class="form-group col-md-4 col-xs-12">
+                              <label class="label" for="">Кол-во светильников</label>
+                              <div class="quantity-block">
+                                  <span class="quantity-arrow-minus"></span>
+                                  <input class="quantity-num" type="number" value="1" />
+                                  <span class="quantity-arrow-plus"></span>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-4 col-xs-12">
+                              <div class="form-group-wrapper-check">
+                                <label class="label" for="">Монтаж</label>
+                                <label class="checkbox-label" id="verifyLabel2">
+                                  <input class="check-button" value="all" type="checkbox" name="verifyInput2" id="verifyInput2" checked>
+                                  <span class="root-check"></span>
+                                  <span class="">Требуется монтаж</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-controls col-12">
+                              <div class="form-group">
+                                <label class="checkbox-label" id="verifyLabel">
+                                  <input class="check-button" value="all" type="checkbox" name="verifyInput" id="verifyInput" checked>
+                                  <span class="root-check"></span>
+                                  <span class="">Я даю свое согласие на обработку персональных данных.</span>
+                                </label>
+                              </div>                 
+                              <div class="form-group">
+                                <button class="btn" type="submit" name="">Отправить</button>
+                              </div>
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal fade bs-example-modal-lg" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="subscribe-modal-label">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="close-address-btn" data-dismiss="modal" aria-hidden="true"><img src="images/ic_close.svg" alt=""></div>  
+                      <h3>Запрос отправлен. Посетите Ваш почтовый ящик, чтобы подтвердить emai.</h3>         
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="notice-success">
+            Позиция добавлена в заказ.
+        </div>     
+          <script type="text/javascript" charset="UTF-8" src="js/bootstrap.js"></script>        
+          <script type="text/javascript" charset="UTF-8" src="js/owl.carousel.js"></script>
+          <script type="text/javascript" charset="UTF-8" src="js/custom.js"></script>
+        </body>
+      </html>
