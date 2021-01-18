@@ -168,16 +168,7 @@ $(function() {
 
 });
 
-// $(document).ready(function () {
-//   $('#thumbnails img').on('click', function(e){
-//       e.preventDefault();
-//       var src = $(this).attr('src');
-//       $('#thumbnails .item').removeClass('active');
-//       var activPreview = $(this).parent('.item');
-//       $(activPreview).addClass('active');
-//       $('#largeImage').attr('src', src);
-//   });
-// });
+
 $(document).ready(function () {
   $('#thumbnails img.thumbnails-img').on('mouseenter', function(){
       var src = $(this).attr('src');
@@ -290,14 +281,39 @@ $(document).ready(function() {
   var widthView = $(window).width();
   if (widthView > 768) {
     carouselVert(); 
-  } 
+  } else {
+    galleryLargeImg();
+  }
   $(window).resize(function() {   
       var widthView = $(window).width();
       if (widthView > 768) {
         carouselVert(); 
-      } 
+      } else {
+        galleryLargeImg();
+      }
   });
 })();
+
+function galleryLargeImg(){
+  $('.gallery .item img.thumbnails-img').on('click', function(e){
+      e.preventDefault();
+      var src = $(this).attr('src');
+      console.log(src);
+      var newDiv = document.createElement("div");
+          newDiv.className = 'largeImg';
+          newDiv.innerHTML += '<span class="mobile-menu-close"><img src="images/ic_close.svg"></span><img class="modal-largeImg">';  
+          $('body').addClass('modal-open')
+          document.body.appendChild(newDiv);
+          $('img.modal-largeImg').attr('src', src);
+  });
+  $(document).on('click', '.largeImg', function(){
+    $('.largeImg').remove();
+    console.log("hfhfh");
+    $('body').removeClass('modal-open');
+  });
+};
+
+
 
 function carouselVert(){
   let width = 120; // ширина картинки
@@ -356,3 +372,4 @@ function carouselVert(){
 //   position = Math.max(position, -width * (listElems.length - count));
 //   list.style.marginLeft = position + 'px';
 // };
+

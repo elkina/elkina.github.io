@@ -1288,6 +1288,20 @@ table {
                     }
 
                 }
+                @media (max-width: 576px) { 
+                    display: block;
+                    height: auto;
+                    .hero-banner_price {
+                        margin-right: 0;
+                    }
+                    .hero-banner_btn {
+                        margin-top: 8px;
+                        .btn-link {
+                            justify-content: space-between;
+                        }
+                        
+                    }
+                }
             }
         }
     }
@@ -3602,6 +3616,12 @@ table {
         background: $warning;
         cursor: pointer;
     }
+    @media (max-width: 576px) {  
+        display: block;
+        span {
+            margin: 16px 0;
+        }
+    }
 }
 .product-card {
     .product-media  {
@@ -4315,7 +4335,7 @@ table {
                         align-items: center;
                         &.active {
                             border: none;
-                            cursor: default;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -4327,7 +4347,35 @@ table {
     }
     
 }
+.largeImg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 99999;
+    span {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        z-index: 1200;
+        top: 32px;
+        right: 32px;
+        cursor: pointer;
+        display: block;
+    }
+    img {
+        &.modal-largeImg {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            padding: 50px 20px;
+            max-width: 335px;
+        }
+    }
 
+}
 
 .product-project {
     margin: 32px 0;
@@ -5673,6 +5721,10 @@ input[type="tel"]:focus:required:invalid
     }
 }
 
+.modal-open {
+    overflow: hidden;
+    position: relative;
+}
 
 
 

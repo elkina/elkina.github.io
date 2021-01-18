@@ -1700,6 +1700,16 @@ table {
           .hero-banner_container .item .hero-banner_info .hero-banner_general .hero-banner_btn .btn-link {
             background-color: #004192;
             border: 2px solid #ffffff; } }
+      @media (max-width: 576px) {
+        .hero-banner_container .item .hero-banner_info .hero-banner_general {
+          display: block;
+          height: auto; }
+          .hero-banner_container .item .hero-banner_info .hero-banner_general .hero-banner_price {
+            margin-right: 0; }
+          .hero-banner_container .item .hero-banner_info .hero-banner_general .hero-banner_btn {
+            margin-top: 8px; }
+            .hero-banner_container .item .hero-banner_info .hero-banner_general .hero-banner_btn .btn-link {
+              justify-content: space-between; } }
 
 .main-form {
   width: 100%;
@@ -3530,6 +3540,11 @@ table {
     color: #FFFFFF;
     background: #FF3A46;
     cursor: pointer; }
+  @media (max-width: 576px) {
+    .vendor-code {
+      display: block; }
+      .vendor-code span {
+        margin: 16px 0; } }
 
 .product-card .product-media .product-informations-download {
   padding: 24px 0;
@@ -4090,9 +4105,33 @@ table {
             align-items: center; }
             .product-gallery_inner .carousel .gallery ul li.item.active {
               border: none;
-              cursor: default; }
+              cursor: pointer; }
     .product-gallery_inner .image-preview {
       display: none; } }
+
+.largeImg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  z-index: 99999; }
+  .largeImg span {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    z-index: 1200;
+    top: 32px;
+    right: 32px;
+    cursor: pointer;
+    display: block; }
+  .largeImg img.modal-largeImg {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    max-width: 335px; }
 
 .product-project {
   margin: 32px 0; }
@@ -5194,3 +5233,7 @@ input[type="tel"]:focus:required:invalid {
   z-index: 3000; }
   .notice-success.active {
     display: block; }
+
+.modal-open {
+  overflow: hidden;
+  position: relative; }
